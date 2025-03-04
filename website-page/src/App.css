@@ -1,21 +1,63 @@
+/* Import Fira Code font */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&display=swap');
+
+
 html, body {
   height: 100%;           /* Ensure full height for the page */
   margin: 0;              /* Remove default margin */
 }
 
 body {
-  display: flex;          /* Make body a flex container */
+  background-color: azure;
+  display: flex;  
+  color: black;        /* Make body a flex container */
   flex-direction: column; /* Stack children (header, content, footer) vertically */
-  min-height: 100vh;      /* Ensure the body takes up at least the full height of the viewport */
+  min-height: 100vh;  
+  font-family: 'Fira Code', monospace;    /* Ensure the body takes up at least the full height of the viewport */
+}
+
+.navBar{
+/* border: solid; */
+/* font-size: 2em; */
+margin-left: 5px;
+
+}
+
+a{
+  text-decoration: none;
+  margin: 5px;
+  color: black;
+  font-size: 200%;
+}
+@media (max-width: 1200px) {
+  a {
+    font-size: 150%; /* 2 items per row for medium screens */
+  }
+}
+
+@media (max-width: 740px) {
+  a {
+    font-size: 100%; /* 2 items per row for medium screens */
+  }
 }
 
 header {
+  position: sticky;
+  top: 0; /* Ensures the header sticks to the top */
+  justify-content: center;
+  align-items: center;
   width: 100vw;
-  background-color: #333; /* Example background color */
-  color: white;
-  padding: 10px;
   text-align: center;
+  border-bottom: dashed;
+  display: flex;
+  flex-wrap: wrap;
+  height: 7vw;
+  flex: 1;
+  z-index: 10; /* Optional, to make sure it stays on top of other content */
 }
+.title{
+  justify-content: center;
+  text-align: center;}
 
 footer {
   background-color: #333;
@@ -27,16 +69,17 @@ footer {
 }
 
 .content {
+  margin-top: 0vw; /* Push the content below the header */
   /* display: flex; */
   flex-wrap: wrap;
   flex: 1;
-  padding: 20px;
-  overflow-y: auto;  
+  overflow-y: auto;
   justify-content: center;
+  height: calc(100vh - 1vw); /* Make sure content takes up the remaining height */
 }
 
 .projectContainer, .aboutMeContainer, .certsAndStacksContainer, .getInTouchContainer{
-  /* border: solid 1px; */
+  border: solid 1px;
   flex: 1;
   justify-content: center;
   text-align: center;
@@ -47,41 +90,64 @@ footer {
 .projects{
   display: flex;
   flex-wrap: wrap;
+  align-content: center;
+  align-self: center;
   justify-content: space-evenly;
-  /* flex-direction: row; */
+  flex-direction: row;
 }
 
-.project1, .project3, .project4{
-  border:solid;
-  padding:220px;
-  margin:5px;
+.project1, .project2, .project3, .project4, .project5 {
+  border: solid;
+  margin: 5px;
   border-radius: 10px;
+  box-sizing: border-box; /* Ensures padding and border are included in width/height */
+  width: 30%; /* Adjust the percentage to control how many items fit in a row */
+  min-width: 250px; /* Minimum width to maintain design on smaller screens */
+  height: 350px; 
+  display: inline-block;
+  vertical-align: top; 
 }
-.project2{
-  /* padding:40px; */
-  margin:5px;
-}
-.clipHalf{
-  height:50%;
-  /* border:solid 1px; */
+.project2 {
+  height: 350px; /* This ensures the video container stays at a fixed height */
+  position: relative; /* Make sure the video is positioned inside the container */
 }
 
-.contentHalf{
-  width:440px;
-  height:40%;
+/* Responsive design */
+@media (max-width: 1200px) {
+  .project1, .project2, .project3, .project4 {
+    width: 45%; /* 2 items per row for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .project1, .project2, .project3, .project4 {
+    width: 70%; /* 1 item per row for small screens */
+    height: 300px; /* Adjust height for smaller screens */
+  }
+}
+.clipHalf {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+/* .contentHalf{
+  height:32%;
   contain: content;
   overflow: hidden;
   overflow-y: scroll;
   border-radius: 10px;
   border:solid 2px;
-  margin-top: 35px;
+  margin-top: 50px;
+} */
+
+#hoverVideo {
+  width: 100%; /* Take up full width of the parent container */
+  height: 50%; /* Take up full height of the parent container */
+  object-fit: cover; /* Fill the container while preserving the aspect ratio */
+  border-radius: 10px; /* Maintain border-radius for the video */
 }
 
-#hoverVideo{
-border: solid 2px;
-border-radius: 10px;
-width:440px;
-}
-.ELText{
-  margin-top: 10px;
-}
+/* .ELText{
+  margin-top: 20px;
+} */
