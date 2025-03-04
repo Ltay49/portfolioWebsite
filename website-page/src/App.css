@@ -1,0 +1,77 @@
+html, body {
+  height: 100%;           /* Ensure full height for the page */
+  margin: 0;              /* Remove default margin */
+}
+
+body {
+  display: flex;          /* Make body a flex container */
+  flex-direction: column; /* Stack children (header, content, footer) vertically */
+  min-height: 100vh;      /* Ensure the body takes up at least the full height of the viewport */
+}
+
+header {
+  width: 100vw;
+  background-color: #333; /* Example background color */
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  position: relative;
+  text-align: center;
+  margin-top: auto; 
+}
+
+.content {
+  /* display: flex; */
+  flex-wrap: wrap;
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;  
+  justify-content: center;
+}
+
+.projectContainer, .aboutMeContainer, .certsAndStacksContainer, .getInTouchContainer{
+  /* border: solid 1px; */
+  flex: 1;
+  justify-content: center;
+  text-align: center;
+  /* padding: 100px; */
+  display: flex;
+  flex-wrap: wrap;
+}
+.projects{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* flex-direction: row; */
+}
+
+.project1, .project3, .project4{
+  border:solid;
+  padding:220px;
+  margin:5px;
+  border-radius: 10px;
+}
+.project2{
+  margin:5px;
+}
+.clipHalf{
+  height:50%;
+  /* border:solid 1px; */
+}
+
+.contentHalf{
+  height:50%;
+  /* border:solid 1px; */
+}
+
+#hoverVideo{
+border: solid 2px;
+border-radius: 10px;
+width:440px;
+}
