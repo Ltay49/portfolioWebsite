@@ -5,10 +5,6 @@ export default function Content (){
 
     return (
         <div class="content">
-            <div className='title'>
-                <h1>LEWIS TAYLOR</h1>
-                <h3>Full Stack Junior Software Devloper</h3>
-            </div>
             <section className="projectContainer">
                <Projects/>
             </section>

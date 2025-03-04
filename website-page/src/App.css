@@ -27,17 +27,22 @@ a{
   text-decoration: none;
   margin: 5px;
   color: black;
-  font-size: 200%;
+  font-size: 100%;
 }
 @media (max-width: 1200px) {
   a {
-    font-size: 150%; /* 2 items per row for medium screens */
+    font-size: 100%; /* 2 items per row for medium screens */
   }
 }
 
 @media (max-width: 740px) {
   a {
     font-size: 100%; /* 2 items per row for medium screens */
+  }
+}
+@media (max-width: 480px) {
+  a {
+    font-size: 100%; /* Even smaller for very small phones */
   }
 }
 
@@ -48,11 +53,12 @@ header {
   align-items: center;
   width: 100vw;
   text-align: center;
-  border-bottom: dashed;
+  border-bottom: solid 1px;
   display: flex;
   flex-wrap: wrap;
-  height: 7vw;
+  height: auto;
   flex: 1;
+ padding-bottom: 5;
   z-index: 10; /* Optional, to make sure it stays on top of other content */
 }
 .title{
@@ -69,7 +75,7 @@ footer {
 }
 
 .content {
-  margin-top: 0vw; /* Push the content below the header */
+  /* margin-top: 1vw; Push the content below the header */
   /* display: flex; */
   flex-wrap: wrap;
   flex: 1;
