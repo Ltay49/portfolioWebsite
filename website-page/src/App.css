@@ -42,7 +42,7 @@ a{
 }
 @media (max-width: 480px) {
   a {
-    font-size: 100%; /* Even smaller for very small phones */
+    font-size: 90%; /* Even smaller for very small phones */
   }
 }
 
