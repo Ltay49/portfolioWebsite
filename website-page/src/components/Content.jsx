@@ -4,7 +4,7 @@ import Projects from './contentComps/Projects'
 export default function Content (){
 
     return (
-        <div class="content">
+        <div className="content">
             <section className="projectContainer">
             <section className="projectTitle">
                 <h3>Projects</h3>

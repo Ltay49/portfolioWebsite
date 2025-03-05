@@ -8,7 +8,7 @@ html, body {
 }
 
 body {
-  background-color: azure;
+  background-color:azure;
   display: flex;  
   color: black;        /* Make body a flex container */
   flex-direction: column; /* Stack children (header, content, footer) vertically */
@@ -62,11 +62,11 @@ header {
   z-index: 10; /* Optional, to make sure it stays on top of other content */
 }
 .projectTitle{
-  margin-right:47vw;
+  /* margin-right:60vw; */
   /* position:absolute; */
   justify-content: flex-end;
-  text-align: center;
-  width:100vw
+  /* border: solid; */
+  width:90vw
 }
 
 footer {
@@ -98,6 +98,8 @@ footer {
   flex-wrap: wrap;
 }
 .projects{
+  width: 99vw;
+  border: solid 1px;
   margin-top: 0px;
   display: flex;
   flex-wrap: wrap;
@@ -107,7 +109,8 @@ footer {
   flex-direction: row;
 }
 
-.project1, .project2, .project3, .project4, .project5 {
+.project1, .project2, .project3{
+  background-color: black;
   border: solid;
   margin: 5px;
   border-radius: 10px;
@@ -118,10 +121,7 @@ footer {
   display: inline-block;
   text-align: center;
   vertical-align: top; 
-}
-.project2 {
-  height: 350px; /* This ensures the video container stays at a fixed height */
-  position: relative; /* Make sure the video is positioned inside the container */
+  position: relative; 
 }
 
 /* Responsive design */
@@ -137,27 +137,86 @@ footer {
     height: 300px; /* Adjust height for smaller screens */
   }
 }
-.clipHalf {
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
+
+.overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7); /* Black with 70% opacity */
+  width: 100%; /* Full width of the container */
+  height: 100%; /* Full height of the container */
+  left: 0;
+  top: 0;
+  z-index: 10; /* Ensure it's above the content, but below other elements if necessary */
+  border-radius: 10px; /* Matches the border-radius of the container */
 }
 
-/* .contentHalf{
-  height:32%;
-  contain: content;
-  overflow: hidden;
-  overflow-y: scroll;
-  border-radius: 10px;
-  border:solid 2px;
-  margin-top: 50px;
-} */
-
-#hoverVideo {
+.hoverVideo {
+  position: absolute;
   width: 100%; /* Take up full width of the parent container */
-  height: 50%; /* Take up full height of the parent container */
+  left:0;
+  top:0;
+  height: 100%;
   object-fit: cover; /* Fill the container while preserving the aspect ratio */
-  border-radius: 10px; /* Maintain border-radius for the video */
+  border-radius: 10px; 
+  z-index: 1;
+}
+.overlay{
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.65);  
+  object-fit: cover;
+  width: 100%; /* Take up full width of the parent container */
+  left:0;
+  top:0;
+  height: 100%;
+  z-index: 20;
+}
+
+.Projtitle{
+  position: absolute;
+  z-index: 22;
+  object-fit: cover;
+  width: 100%; /* Take up full width of the parent container */
+  left:0;
+  top:-25%;
+  height: 80%;
+  color: azure;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  font-size: 3em;
+  /* border: solid black; */
+  /* text-decoration: underline; */
+}
+.Projtag{
+  position: absolute;
+  z-index: 22;
+  object-fit: cover;
+  width: 100%; /* Take up full width of the parent container */
+  left:0%;
+  top:10%;
+  height: 80%;
+  color: azure;
+  justify-content: flex-end;
+  text-align: center;
+  align-content: center;
+  font-size: 1em;
+  /* border: solid black; */
+  /* text-decoration: underline; */
+}
+.Projbutton{
+  position: absolute;
+  z-index: 22;
+  object-fit: cover;
+  width: 100%; /* Take up full width of the parent container */
+  left:0%;
+  top:40%;
+  height: 80%;
+  color: azure;
+  justify-content: flex-end;
+  text-align: center;
+  align-content: center;
+  font-size: 1em;
+  /* border: solid black; */
+  /* text-decoration: underline; */
 }
 
 /* .ELText{
