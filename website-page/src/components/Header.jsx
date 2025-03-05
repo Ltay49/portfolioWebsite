@@ -10,7 +10,7 @@ export default function Header() {
             </div>
           <a href="#projects">Projects -</a>
           <a href="#aboutMe">About Me -</a>
-          <a href="#certification">Certs -</a>
+          <a href="#certification">Certs & Stacks -</a>
           <a href="#contactMe">Contact Me</a>
         </nav>
       </header>

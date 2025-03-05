@@ -6,6 +6,9 @@ export default function Content (){
     return (
         <div class="content">
             <section className="projectContainer">
+            <section className="projectTitle">
+                <h3>Projects</h3>
+            </section>
                <Projects/>
             </section>
             <section className="aboutMeContainer">
