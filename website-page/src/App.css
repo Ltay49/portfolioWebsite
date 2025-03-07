@@ -13,7 +13,7 @@ html, body {
 }
 
 body {
-  background-color:azure;
+  background-color:white;
   display: flex;  
   color: black;        /* Make body a flex container */
   flex-direction: column; /* Stack children (header, content, footer) vertically */
@@ -129,7 +129,7 @@ footer {
 }
 .projects{
   width: 99vw;
-  border: solid 1px;
+  /* border: solid 1px; */
   margin-top: 0px;
   display: flex;
   flex-wrap: wrap;
