@@ -5,8 +5,8 @@ export default function Header() {
       <header>
         <nav className="navBar">
         <div className='title'>
-                <h1>LEWIS TAYLOR</h1>
-                <h3>Junior Software Devloper & Designer</h3>
+                <h1 id="name">LEWIS TAYLOR</h1>
+                <h3 id="titles">Junior Software Devloper & Designer</h3>
             </div>
           <a href="#projects">Projects -</a>
           <a href="#aboutMe">About Me -</a>
