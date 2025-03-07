@@ -1,5 +1,9 @@
 import ELVideo from "../../assets/EL_Video.mp4";
 import NCVID from "../../assets/nc_news.mp4";
+import HOWTOPLAY from "../../assets/BarclaysMen.jpeg"
+import GAMEPLAY from "../../assets/BarclaysMen 2.jpeg"
+import WIN from "../../assets/BarclaysMen 3.jpeg"
+
 
 export default function Projects() {
   return (
@@ -43,6 +47,9 @@ export default function Projects() {
         <section className="Projbutton">
           <button className="btnStyle">learn more here!</button>
         </section>
+        <img className="howToPlay" src={HOWTOPLAY}></img>
+        <img className="gamePlay" src={WIN}></img>
+        <img className="win" src={GAMEPLAY}></img>
       </section>
     </div>
   );

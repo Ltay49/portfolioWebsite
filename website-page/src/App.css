@@ -43,7 +43,7 @@ a{
 }
 @media (max-width: 480px) {
   a {
-    font-size: 60%; /* Even smaller for very small phones */
+    font-size: 70%; /* Even smaller for very small phones */
   }
 }
 
@@ -92,21 +92,20 @@ header {
  height: 168px;
 }
 .projectTitle{
-  /* margin-right:60vw; */
-  /* position:absolute; */
+
   justify-content: flex-end;
-  /* border: solid; */
+
   width:90vw
 }
 
 footer {
   background-color: #333;
   color: white;
-  padding: 20px;
+  padding-bottom: 20px;
   position: relative;
   text-align: center;
   margin-top: auto; 
-  height: 30px; 
+  height: 20px; 
 }
 
 .content {
@@ -200,7 +199,7 @@ footer {
   border-radius: 10px; /* Matches the border-radius of the container */
 }
 
-.hoverVideo {
+.hoverVideo, .howToPlay{
   position: absolute;
   width: 100%; /* Take up full width of the parent container */
   left:0;
@@ -208,6 +207,36 @@ footer {
   height: 100%;
   object-fit: cover; /* Fill the container while preserving the aspect ratio */
   border-radius: 10px; 
+  z-index: 1;
+}
+.howToPlay{
+  opacity: .3;
+  position: absolute;
+  width: 33%; /* Take up full width of the parent container */
+  left:0;
+  top:0;
+  height: 100%;
+  object-fit: cover; /* Fill the container while preserving the aspect ratio */
+  z-index: 1;
+}
+.gamePlay{
+  opacity: .3;
+  position: absolute;
+  width: 33%; /* Take up full width of the parent container */
+  left:66%;
+  top:0;
+  height: 100%;
+  object-fit: cover; /* Fill the container while preserving the aspect ratio */
+  z-index: 1;
+}
+.win{
+  opacity: .3;
+  position: absolute;
+  width: 40%; /* Take up full width of the parent container */
+  left:30%;
+  top:0;
+  height: 100%;
+  object-fit: cover; /* Fill the container while preserving the aspect ratio */
   z-index: 1;
 }
 .overlay{
@@ -220,6 +249,7 @@ footer {
   height: 100%;
   z-index: 20;
 }
+
 
 .Projtitle{
   position: absolute;
