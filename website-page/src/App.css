@@ -1,6 +1,8 @@
 /* Import Fira Code font */
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
 
 
 html, body {
@@ -41,7 +43,7 @@ a{
 }
 @media (max-width: 480px) {
   a {
-    font-size: 80%; /* Even smaller for very small phones */
+    font-size: 60%; /* Even smaller for very small phones */
   }
 }
 
@@ -182,7 +184,7 @@ footer {
 
 @media (max-width: 768px) {
   .project1, .project2, .project3, .project4 {
-    width: 90%; /* 1 item per row for small screens */
+    width: 95%; /* 1 item per row for small screens */
     height: 300px; /* Adjust height for smaller screens */
   }
 }
@@ -239,6 +241,30 @@ footer {
   color: lightgreen;
   font-family: 'Press Start 2P', cursive;
 }
+@media (max-width: 768px) {
+  #ELtext, #NCtext, #BCtext {
+    font-size: 2.4em;
+  }
+}
+@media (max-width: 768px) { #titles{
+    font-size: 1.7em;
+    margin-right: 0px;
+    height: 150px;
+    width:170px;
+    margin-bottom: 45px;
+    padding-left: 5px;
+    border-left: black solid;
+    text-align: left;
+  }
+}
+@media (max-width: 768px) { #name{
+  font-size: 3em;
+  margin-right: 5px;
+  width:165px
+
+
+}
+}
 #NCtext{
   font-size: 2.8em;
   color: red;
@@ -246,6 +272,7 @@ footer {
 #BCtext{
   font-size: 2.8em;
   color: #0063A1;
+  font-family: 'Luckiest Guy', cursive;
 }
 .Projtag{
   position: absolute;
