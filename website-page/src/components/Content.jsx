@@ -1,4 +1,5 @@
 import Projects from './contentComps/Projects'
+import Certs from "./contentComps/Certs"
 
 
 export default function Content (){
@@ -11,10 +12,11 @@ export default function Content (){
             </section>
                <Projects/>
             </section>
-            <section className="aboutMeContainer" id="certification">
+            <section  className="certsAndStacksContainer" id="certification">
             <h3>Certs & Stacks</h3>
             </section>
-            <section className="certsAndStacksContainer" id="aboutMe">
+            <Certs/>
+            <section className="aboutMeContainer" id="aboutMe">
             <h3>About Me</h3>
             </section>
             <section className="getInTouchContainer">

@@ -153,6 +153,34 @@ footer {
   vertical-align: top; 
   position: relative; 
 }
+.cert{
+  background-color: black;
+  border: solid;
+  margin: 5px;
+  border-radius: 10px;
+  box-sizing: border-box; /* Ensures padding and border are included in width/height */
+  width: 25%; /* Adjust the percentage to control how many items fit in a row */
+  min-width: 250px; /* Minimum width to maintain design on smaller screens */
+  height: 350px; 
+  display: inline-block;
+  text-align: center;
+  vertical-align: top; 
+  position: relative; 
+}
+.stacks{
+  /* background-color: black; */
+  border: solid;
+  margin: 5px;
+  border-radius: 10px;
+  box-sizing: border-box; /* Ensures padding and border are included in width/height */
+  width: 60%; /* Adjust the percentage to control how many items fit in a row */
+  min-width: 250px; /* Minimum width to maintain design on smaller screens */
+  height: 350px; 
+  display: inline-block;
+  text-align: center;
+  vertical-align: top; 
+  position: relative; 
+}
 
 .project1 {
   border-color: red;
@@ -183,7 +211,7 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .project1, .project2, .project3, .project4 {
+  .project1, .project2, .project3, .stacks {
     width: 95%; /* 1 item per row for small screens */
     height: 300px; /* Adjust height for smaller screens */
   }
@@ -217,6 +245,17 @@ footer {
   left:0;
   top:0;
   height: 100%;
+  object-fit: cover; /* Fill the container while preserving the aspect ratio */
+  z-index: 1;
+}
+.certPic{
+  opacity: 1;
+  position: absolute;
+  width: 99%; /* Take up full width of the parent container */
+  left:1.5px;
+  top:1.5px;
+  border-radius: 10px;
+  height: 99%;
   object-fit: cover; /* Fill the container while preserving the aspect ratio */
   z-index: 1;
 }
@@ -275,6 +314,12 @@ footer {
 @media (max-width: 768px) {
   #ELtext, #NCtext, #BCtext {
     font-size: 2.4em;
+  }
+}
+@media (max-width: 1400px) {
+  #ELtext {
+    margin-top: 50px;
+    font-size: 2.2em;
   }
 }
 @media (max-width: 768px) { #titles{

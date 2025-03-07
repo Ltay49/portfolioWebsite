@@ -6,7 +6,7 @@ export default function Header() {
         <nav className="navBar">
         <div className='title'>
                 <h1 id="name">LEWIS TAYLOR</h1>
-                <h3 id="titles">Junior Software Devloper & Designer</h3>
+                <h3 id="titles">Junior Software Developer & Designer</h3>
             </div>
           <a href="#projects">Projects -</a>
           <a href="#aboutMe">About Me -</a>
