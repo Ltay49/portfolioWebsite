@@ -11,10 +11,10 @@ export default function Content (){
             </section>
                <Projects/>
             </section>
-            <section className="aboutMeContainer">
-            <h3>Certs&Stacks</h3>
+            <section className="aboutMeContainer" id="certification">
+            <h3>Certs & Stacks</h3>
             </section>
-            <section className="certsAndStacksContainer">
+            <section className="certsAndStacksContainer" id="aboutMe">
             <h3>About Me</h3>
             </section>
             <section className="getInTouchContainer">
