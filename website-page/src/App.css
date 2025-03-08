@@ -13,7 +13,7 @@ html, body {
 }
 
 body {
-  background-color:azure;
+  /* background-color:beige; */
   display: flex;  
   color: black;        /* Make body a flex container */
   flex-direction: column; /* Stack children (header, content, footer) vertically */
