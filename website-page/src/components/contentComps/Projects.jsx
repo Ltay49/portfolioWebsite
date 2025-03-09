@@ -28,9 +28,9 @@ const [projectPage, setProjectPage] = useState(false)
                 <p></p>
             </section>
             <section className="projectVideo">
-            <img className="howToPlayPP" src={HOWTOPLAY}></img>
-            {/* <img className="gamePlayPP" src={WIN}></img>
-            <img className="winPP" src={GAMEPLAY}></img> */}
+            <img className="howToPlayPP" src={HOWTOPLAY}></img><p className="gptag">game play</p>
+            <img className="gamePlayPP" src={WIN}></img><p className="gotag">game over</p>
+            <img className="winPP" src={GAMEPLAY}></img><p className="howtotag">how to play</p>
                 <section>
                     <button onClick={newPageHandler}>X</button>
                 </section>
