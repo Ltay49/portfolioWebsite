@@ -47,9 +47,7 @@ const [projectPage, setProjectPage] = useState(false)
             <img className="winPP" src={WIN} style={{ zIndex: activeCard === 'gameOver' ? 10 : 1 }}></img>
             <section className="projectGamePlay"  src={WIN} style={{ zIndex: activeCard === 'gamePlay' ? 10 : 3 }}>
             <button className="gptagTop" onClick={() => setActiveCard('gamePlay')}>game play</button>
-                <p>hjj</p>
-                <p>ghfhgfv</p>
-                <p>ggfgvh</p>
+                <p className="gpblurb">On render an api call is made which fetches all the players from the db, the user is instantly able to begin to match the Barclaysman. The player can be searched via first or surname, this adds to the fast flow of the game. By selecting from the dropdown your guess is instantly shown.</p>
                 <button className="gptag" onClick={() => setActiveCard('gamePlay')}>game play</button>
             </section>
             <section className="projectHowToPlay" style={{ zIndex: activeCard === 'howToPlay' ? 10 : 2 }}>

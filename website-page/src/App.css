@@ -224,11 +224,11 @@ footer {
   height: 89%;
   margin-top: 5px;
   position: relative;
-  background-color: rgb(227, 239, 243);
+  /* background-color: rgb(227, 239, 243, 0.4); */
 }
 .stackText{
   font-family: 'Luckiest Guy', cursive;
-  color: #0063A1;
+  color: black;
   text-align: center;
   font-size: 1.5em;
 }
@@ -604,6 +604,13 @@ border: solid grey 1px;
   height: 85%;
   width: 49%;
   z-index:3;
+  contain: content
+  /* overflow-y: scroll; */
+}
+.gpblurb{
+  margin-top: 22px;
+  text-align: start;
+font-size: 75%;
 }
 .projectHowToPlay{
   background-color: rgb(227, 239, 243);
