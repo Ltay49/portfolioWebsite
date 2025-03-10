@@ -185,7 +185,18 @@ footer {
   color: #0063A1;
   text-align: center;
   font-size: 2em;
-  margin-top: -10px;
+  margin-top: 0px;
+}
+.backToProjects{
+  position: absolute;
+  z-index: 29;
+  bottom: .5%;
+  right: 10px;
+  border: none;
+  background:none;
+  text-decoration: underline;
+  font-family: 'Fira Code', monospace; 
+  text-underline-offset: 2px;
 }
 .barcBack1{
   position:absolute;
@@ -210,7 +221,7 @@ footer {
   /* border: solid; */
   border-radius: 10px;
   width: 32.5%;
-  height: 96%;
+  height: 89%;
   margin-top: 5px;
   position: relative;
   background-color: rgb(227, 239, 243);
@@ -222,6 +233,22 @@ footer {
   font-size: 1.5em;
 }
 
+.ExpoGo{
+position: relative;
+height: 20%;
+right: 0%;
+border-radius: 10px;
+border: solid grey 1px;
+}
+.Expo{
+  margin: 3px;
+  position: relative;
+  height: 20%;
+  right: 0%;
+  border-radius: 10px;
+  border: solid grey 1px;
+  }
+
 @media (max-width: 1200px) {
   .projectPage{
    height: fit-content;
@@ -229,9 +256,16 @@ footer {
 }
 
 @media (max-width: 1200px) {
-  .projectText, .projectVideo, .projectStack{
+  .projectText, .projectVideo{
     width: 45%;
     height:300px
+  }
+}
+@media (max-width: 1200px) {
+.projectStack{
+    width: 45%;
+    height:280px;
+    margin-bottom: 30px;
   }
 }
 
@@ -241,10 +275,24 @@ footer {
     height:300px
   }
 }
+@media (max-width: 1000px) {
+  .projectStack{
+    width: 49%;
+    height:280px;
+    margin-bottom: 30px;
+  }
+}
 @media (max-width: 768px) {
-  .projectText, .projectVideo, .projectStack{
+  .projectText, .projectVideo{
     width: 95%;
     height:300px
+  }
+}
+@media (max-width: 768px) {
+  .projectStack{
+    width: 95%;
+    height:280px;
+    margin-bottom: 30px;
   }
 }
 

@@ -5,6 +5,15 @@ import GAMEPLAY from "../../assets/BarclaysMen 2.jpeg"
 import WIN from "../../assets/BarclaysMen 3.jpeg"
 import { useState } from "react";
 import LUA from "../../assets/LuaLua.png"
+import ExpoGo from "../../assets/ExpoGo.png"
+import Expo from "../../assets/Expo.png"
+import TS from "../../assets/TS.png"
+import JS from "../../assets/JS.png"
+import MongoDB from "../../assets/MongoDB.png"
+import Mongoose from "../../assets/mongoose.png"
+import Netlify from "../../assets/netlify.png"
+import Railway from "../../assets/Railway.png"
+import ReactNative from "../../assets/ReactNative.png"
 
 export default function Projects() {
 
@@ -23,6 +32,9 @@ const [projectPage, setProjectPage] = useState(false)
     <div className="projects" id="projects">
       { projectPage ? (
         <section className="projectPage" id="projects">
+             <section>
+                    <button className="backToProjects" onClick={newPageHandler}>back to projects</button>
+                </section>
             <img className="barcBack1" src={LUA}></img>
             {/* <img className="barcBack" src={LUA}></img> */}
             <section className="projectText">
@@ -54,12 +66,18 @@ const [projectPage, setProjectPage] = useState(false)
                 <p>ggfgvh</p>
                 <button className="gotag" onClick={() => setActiveCard('gameOver')}>game over</button>
             </section>
-                <section>
-                    <button onClick={newPageHandler}>X</button>
-                </section>
             </section>
             <section className="projectStack">
                 <p className="stackText">Stack</p>
+                <img className="Expo" src={ExpoGo}></img>
+                <img className="Expo" src={Expo}></img>
+                <img className="Expo" src={TS}></img>
+                <img className="Expo" src={JS}></img>
+                <img className="Expo" src={MongoDB}></img>
+                <img className="Expo" src={Mongoose}></img>
+                <img className="Expo" src={Railway}></img>
+                <img className="Expo" src={Netlify}></img>
+                <img className="Expo" src={ReactNative}></img>
             </section>
         </section>
       ):(
