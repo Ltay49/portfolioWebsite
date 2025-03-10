@@ -47,21 +47,26 @@ const [projectPage, setProjectPage] = useState(false)
             <img className="winPP" src={WIN} style={{ zIndex: activeCard === 'gameOver' ? 10 : 1 }}></img>
             <section className="projectGamePlay"  src={WIN} style={{ zIndex: activeCard === 'gamePlay' ? 10 : 3 }}>
             <button className="gptagTop" onClick={() => setActiveCard('gamePlay')}>game play</button>
-                <p className="gpblurb">On render an api call is made which fetches all the players from the db, the user is instantly able to begin to match the Barclaysman. The player can be searched via first or surname, this adds to the fast flow of the game. By selecting from the dropdown your guess is instantly shown.</p>
+                <p className="gpblurb">Rapid Api Calls for instant fast flowing game play</p>
+                <p className="gpblurb1">Dynamic searchbar for first and surnames</p>
+                <p className="gpblurb1">Asynch storgae for custom experience which tracks user progress</p>
+                <p className="gpblurb1">Fun and compact styling for UX</p>
                 <button className="gptag" onClick={() => setActiveCard('gamePlay')}>game play</button>
             </section>
             <section className="projectHowToPlay" style={{ zIndex: activeCard === 'howToPlay' ? 10 : 2 }}>
+            <p className="gpblurb">Rapid Api Calls for instant fast flowing game play</p>
+                <p className="gpblurb1">Dynamic searchbar for first and surnames</p>
+                <p className="gpblurb1">Asynch storgae for custom experience which tracks user progress</p>
+                <p className="gpblurb1">Fun and compact styling for UX</p>
             <button className="howtotagTop" onClick={() => setActiveCard('howToPlay')}>how to play</button>
-                <p>hjj</p>
-                <p>ghfhgfv</p>
-                <p>ggfgvh</p>
                 <button className="howtotag" onClick={() => setActiveCard('howToPlay')}>how to play</button>
             </section>
             <section className="projectGameOver" style={{ zIndex: activeCard === 'gameOver' ? 10 : 1 }}>
             <button className="gotagTop" onClick={() => setActiveCard('gameOver')}>game over</button>
-                <p>hjj</p>
-                <p>ghfhgfv</p>
-                <p>ggfgvh</p>
+            <p className="gpblurb">Rapid Api Calls for instant fast flowing game play</p>
+                <p className="gpblurb1">Dynamic searchbar for first and surnames</p>
+                <p className="gpblurb1">Asynch storgae for custom experience which tracks user progress</p>
+                <p className="gpblurb1">Fun and compact styling for UX</p>
                 <button className="gotag" onClick={() => setActiveCard('gameOver')}>game over</button>
             </section>
             </section>
