@@ -176,8 +176,6 @@ footer {
   /* border: solid; */
   width: 32.5%;
   height: 96%;
-  margin-top: 5px;
-  position: relative;
   color: black;
   text-align: left;
   align-content: center;
@@ -187,6 +185,7 @@ footer {
   color: #0063A1;
   text-align: center;
   font-size: 2em;
+  margin-top: -10px;
 }
 .barcBack1{
   position:absolute;
@@ -208,11 +207,13 @@ footer {
 }
 
 .projectStack{
-  border: solid;
+  /* border: solid; */
+  border-radius: 10px;
   width: 32.5%;
   height: 96%;
   margin-top: 5px;
   position: relative;
+  background-color: rgb(227, 239, 243);
 }
 .stackText{
   font-family: 'Luckiest Guy', cursive;
@@ -263,7 +264,7 @@ footer {
   position: relative; 
 }
 .stacks{
-  /* background-color: black; */
+  background-color: black;
   border: solid;
   margin: 5px;
   border-radius: 10px;
@@ -664,6 +665,7 @@ footer {
   padding: 5px;
   justify-content: center;
   align-content: center;
+  margin-top: -35px;
   /* position: absolute;
   top: 10%; */
 }
