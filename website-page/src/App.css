@@ -185,9 +185,7 @@ footer {
 .projpageBarc{
   font-family: 'Luckiest Guy', cursive;
   color: #0063A1;
-  position:absolute;
-  top:0%;
-  left:30%;
+  text-align: center;
   font-size: 2em;
 }
 .barcBack1{
@@ -215,6 +213,12 @@ footer {
   height: 96%;
   margin-top: 5px;
   position: relative;
+}
+.stackText{
+  font-family: 'Luckiest Guy', cursive;
+  color: #0063A1;
+  text-align: center;
+  font-size: 1.5em;
 }
 
 @media (max-width: 1200px) {
@@ -421,7 +425,7 @@ footer {
   top:90.5%;
   padding-top: 7px;
   font-size: 1em;
-  background-color: rgb(245, 88, 88);
+  background-color: rgb(244, 192, 192);
   padding-left: 2px;
   border: none;
   width:100%;
@@ -436,7 +440,7 @@ footer {
   left:0%;
   top:0%;
   font-size: 1em;
-  background-color: rgb(245, 88, 88);
+  background-color: rgb(244, 192, 192);
   padding-left: 2px;
   border: none;
   width:100%;
@@ -450,7 +454,7 @@ footer {
   left:0%;
   top:90.5%;
   font-size: 1em;
-  background-color: rgb(87, 161, 87);
+  background-color: rgb(191, 230, 191);
   padding-left: 2px;
   border: none;
   width:100%;
@@ -465,7 +469,7 @@ footer {
   left:0%;
   top:0%;
   font-size: 1em;
-  background-color: rgb(87, 161, 87);
+  background-color: rgb(191, 230, 191);
   padding-left: 2px;
   border: none;
   width:100%
@@ -499,7 +503,7 @@ footer {
   padding-top:7px;
 }
 .projectGamePlay{
-  background-color: white;
+  background-color: rgb(243, 225, 225);
   position: absolute;
   /* border: black solid 1px; */
   left:50%;
@@ -509,7 +513,7 @@ footer {
   z-index:3;
 }
 .projectHowToPlay{
-  background-color: white;
+  background-color: rgb(227, 239, 243);
   position: absolute;
   /* border: black solid 1px; */
   left:47.5%;
@@ -519,7 +523,7 @@ footer {
   z-index:2;
 }
 .projectGameOver{
-  background-color: white;
+  background-color: rgb(223, 242, 223);
   position: absolute;
   /* border: black solid 1px; */
   left:45%;

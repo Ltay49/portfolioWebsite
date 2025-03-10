@@ -58,7 +58,9 @@ const [projectPage, setProjectPage] = useState(false)
                     <button onClick={newPageHandler}>X</button>
                 </section>
             </section>
-            <section className="projectStack"></section>
+            <section className="projectStack">
+                <p className="stackText">Stack</p>
+            </section>
         </section>
       ):(
         <>
