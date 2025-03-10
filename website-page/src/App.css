@@ -157,10 +157,11 @@ footer {
   background-color: whitesmoke;
   box-shadow: 0px 0px 7px #0063A1;
   border: solid #0063A1 2px;
-  margin: 5px;
-  border-radius: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  /* border-radius: 10px; */
   box-sizing: border-box; /* Ensures padding and border are included in width/height */
-  width: 95%; /* Adjust the percentage to control how many items fit in a row */
+  width: 100vw; /* Adjust the percentage to control how many items fit in a row */
   min-width: 250px; /* Minimum width to maintain design on smaller screens */
   height: 350px; 
   display: flex;
@@ -614,13 +615,13 @@ border: solid grey 1px;
 .gpblurb{
   margin-top: 5px;
   text-align: start;
-font-size: 100%;
+font-size: 85%;
 padding-left: 5px;
 }
 .gpblurb1{
 margin-top: -5px;
 text-align: start;
-font-size: 100%;
+font-size: 85%;
 padding-left: 5px;
 }
 .projectHowToPlay{
