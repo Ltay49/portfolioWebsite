@@ -483,8 +483,8 @@ border: solid grey 1px;
   position: absolute;
   width: 45%; /* Take up full width of the parent container */
   left:0;
-  top:15%;
-  height: 85%;
+  top:0%;
+  height: 90%;
   object-fit: cover; /* Fill the container while preserving the aspect ratio */
   z-index: 1;
 }
@@ -493,9 +493,9 @@ border: solid grey 1px;
   box-shadow: 0px 0px 7px red; 
   position: absolute;
   width: 45%; /* Take up full width of the parent container */
-  left:5%;
+  left:0%;
   top:0%;
-  height: 85%;
+  height: 90%;
   object-fit: cover; /* Fill the container while preserving the aspect ratio */
   z-index: 3;
 }
@@ -504,26 +504,26 @@ border: solid grey 1px;
   box-shadow: 0px 0px 7px lightblue; 
   position: absolute;
   width: 45%; /* Take up full width of the parent container */
-  left:2.5%;
-  top:7.5%;
-  height: 85%;
+  left:0%;
+  top:0%;
+  height: 90%;
   object-fit: cover; /* Fill the container while preserving the aspect ratio */
   z-index: 2;
 }
 .gptag{
-  /* border: black solid 1px; */
-  border-radius: 2px;
+  border: black solid 1px;
+  border-radius: 5px;
   position: absolute;
   left:0%;
-  top:90.5%;
+  bottom:0%;
   padding-top: 7px;
   font-size: 1em;
   background-color: rgb(244, 192, 192);
   padding-left: 2px;
-  border: none;
-  width:100%;
+  /* border: none; */
+  width:33%;
   font-family: 'Luckiest Guy', cursive;
-  text-align: right;
+  text-align: center;
 }
 .gptagTop{
   padding-top: 7px;
@@ -544,14 +544,16 @@ border: solid grey 1px;
   font-family: 'Luckiest Guy', cursive;
   border-radius: 2px;
   position: absolute;
-  left:0%;
-  top:90.5%;
+  left:66%;
+  border-radius: 5px;
+  bottom: 0%;
   font-size: 1em;
   background-color: rgb(191, 230, 191);
   padding-left: 2px;
   border: none;
-  width:100%;
+  width:33%;
   padding-top: 7px;
+  text-align: center;
 }
 .gotagTop{
   padding-top: 7px;
@@ -568,18 +570,20 @@ border: solid grey 1px;
   width:100%
 }
 .howtotag{
+  border-radius: 5px;
   text-align: right;
   font-family: 'Luckiest Guy', cursive;
   border-radius: 2px;
   position: absolute;
-  left:0%;
-  top:90.5%;
+  left:33%;
+  bottom:0%;
   font-size: 1em;
   background-color: lightblue;
   padding-left: 2px;
   border: none;
-  width:100%;
+  width:33%;
   padding-top: 7px;
+  text-align: center;
 }
 .howtotagTop{
   text-align: left;
@@ -598,35 +602,35 @@ border: solid grey 1px;
 .projectGamePlay{
   background-color: rgb(243, 225, 225);
   position: absolute;
-  /* border: black solid 1px; */
-  left:50%;
+  border-bottom: rgb(243, 225, 225) solid 2px;
+  left:45%;
   top:0%;
-  height: 85%;
-  width: 49%;
+  height: 90%;
+  /* width: 100%; */
   z-index:3;
   contain: content
   /* overflow-y: scroll; */
 }
 .gpblurb{
-  margin-top: 24px;
+  margin-top: 5px;
   text-align: start;
-font-size: 75%;
+font-size: 100%;
 padding-left: 5px;
 }
 .gpblurb1{
 margin-top: -5px;
 text-align: start;
-font-size: 75%;
+font-size: 100%;
 padding-left: 5px;
 }
 .projectHowToPlay{
   background-color: rgb(227, 239, 243);
   position: absolute;
   /* border: black solid 1px; */
-  left:47.5%;
-  top:7.5%;
-  height: 85%;
-  width: 49%;
+  left:45%;
+  top:0%;
+  height: 90%;
+  width: 55%;
   z-index:2;
 }
 .projectGameOver{
@@ -634,9 +638,9 @@ padding-left: 5px;
   position: absolute;
   /* border: black solid 1px; */
   left:45%;
-  top:15%;
-  height: 85%;
-  width: 49%;
+  top:0%;
+  height: 90%;
+  width: 55%;
   z-index:1;
 }
 .Projtitle{
