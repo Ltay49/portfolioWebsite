@@ -249,6 +249,49 @@ border: solid grey 1px;
   border: solid grey 1px;
   }
 
+@media(max-width: 1000px){
+  .Expo{
+    height: 12%;
+  }
+}
+@media(max-width: 1100px){
+  .Expo{
+    height: 25%;
+  }
+}
+@media(max-width: 1500px){
+  .Expo{
+    height: 16%;
+  }
+}
+@media(max-width: 1600px){
+  .Expo{
+    height: 16%;
+  }
+}
+@media(max-width: 1199px){
+  .Expo{
+    height: 25%;
+  }
+}
+
+@media(max-width: 900px){
+  .Expo{
+    height: 25%;
+  }
+}
+@media(max-width: 890px){
+  .Expo{
+    height: 21%;
+    margin-bottom: 1px;
+  }
+}
+@media (max-width: 480px) {
+  .Expo {
+    height: 16%; /* Even smaller for very small phones */
+  }
+}
+
 @media (max-width: 1200px) {
   .projectPage{
    height: fit-content;
@@ -263,21 +306,22 @@ border: solid grey 1px;
 }
 @media (max-width: 1200px) {
 .projectStack{
-    width: 45%;
+    width: 95%;
     height:280px;
     margin-bottom: 30px;
   }
 }
 
+
 @media (max-width: 1000px) {
-  .projectText, .projectVideo, .projectStack{
+  .projectText, .projectVideo{
     width: 49%;
     height:300px
   }
 }
 @media (max-width: 1000px) {
   .projectStack{
-    width: 49%;
+    width: 100%;
     height:280px;
     margin-bottom: 30px;
   }
