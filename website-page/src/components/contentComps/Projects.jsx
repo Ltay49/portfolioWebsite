@@ -146,7 +146,7 @@ export default function Projects() {
                 className="howtoblurb"
                 style={{ opacity: activeCard === "howToPlay" ? 1 : 0 }}
               >
-                In-play game styling reproduced, providing continuity and
+                In-play game styling, providing continuity and
                 establishing a consistent theme
               </p>
             </section>
