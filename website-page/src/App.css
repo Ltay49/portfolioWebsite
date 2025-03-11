@@ -222,6 +222,7 @@ header {
   position: relative;
   justify-content: center;
   align-content: center;
+  
 }
 
 .projectStack{
@@ -817,13 +818,15 @@ width:113px
     /* border: black 2px solid; */
     box-shadow: 0px 0px 7px black;
     position: absolute;
-    width: 100%; /* Take up full width of the parent container */
-    left:-1%;
+    width: 130%; /* Take up full width of the parent container */
+    left:0%;
     top:0%;
-    height: 50%;
+    height: 100%;
     object-fit: cover; /* Fill the container while preserving the aspect ratio */
     z-index: 3;
     border-radius: 10px;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; 
   }
   .gltag{
     text-align: right;
@@ -856,4 +859,15 @@ width:113px
     border-top-left-radius: 0px;
     box-shadow: 0px 0px 7px black; 
     /* overflow-y: scroll; */
+  }
+  .overflow{
+    left:-1%;
+    bottom:27%;
+    width: 100%;
+    height: 50%;
+    position: relative;
+    border-radius: 10px;
+    border: solid 1px black;
+    box-shadow: 0px 0px 7px black;
+    overflow-x: scroll;
   }

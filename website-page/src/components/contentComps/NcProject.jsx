@@ -73,11 +73,13 @@ export default function NcProject({projectPageNc,setProjectPageNc }) {
             src={WIN}
             style={{ zIndex: activeCard === "gameOver" ? 10 : 0 }}
           ></img> */}
+          <section className="overflow">
           <img
             className="generalLayoutPP"
             src={GeneralLayout}
             style={{ zIndex: activeCard === "gamePlay" ? 10 : 0 }}
           ></img>
+            </section>
           <section
             className="projectGeneralLayout"
             //   src={WIN}
