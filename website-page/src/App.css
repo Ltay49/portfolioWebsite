@@ -596,7 +596,7 @@ border: solid grey 1px;
   box-shadow: 0px 0px 7px black; 
   /* overflow-y: scroll; */
 }
-.gpblurb{
+.gpblurb,.howtoblurb, .goBlurb{
 list-style-type: none; /* Remove default bullet */
 background-image: url('./assets/Football.png');
 background-repeat: no-repeat;
@@ -610,19 +610,12 @@ padding-left: 30px;
 font-family: 'Varela Round', sans-serif;
 }
 @media (max-width: 400px) {
-  .gpblurb {
+  .gpblurb, .howtoblurb, .goBlurb {
     font-size: 90%;
     margin-top: 10px;
   }
 }
 
-.gpblurb1{
-margin-top: -5px;
-text-align: start;
-font-size: 100%;
-padding-left: 5px;
-font-family: 'Varela Round', sans-serif;
-}
 .projectHowToPlay{
   /* background-color: rgb(227, 239, 243); */
   opacity: 1;
