@@ -14,10 +14,9 @@ import Mongoose from "../../assets/mongoose.png";
 import Netlify from "../../assets/netlify.png";
 import Railway from "../../assets/Railway.png";
 import ReactNative from "../../assets/ReactNative.png";
-import Football from "../../assets/Football.png";
 
 export default function Projects() {
-  const [activeCard, setActiveCard] = useState(null);
+  const [activeCard, setActiveCard] = useState("gamePlay");
   const [projectPage, setProjectPage] = useState(false);
 
   const newPageHandler = () => {
@@ -84,26 +83,26 @@ export default function Projects() {
               src={HOWTOPLAY}
               style={{ zIndex: activeCard === "howToPlay" ? 10 : 0 }}
             ></img>
+             <img
+              className="winPP"
+              src={WIN}
+              style={{ zIndex: activeCard === "gameOver" ? 10 : 0 }}
+            ></img>
             <img
               className="gamePlayPP"
               src={GAMEPLAY}
               style={{ zIndex: activeCard === "gamePlay" ? 10 : 0 }}
             ></img>
-            <img
-              className="winPP"
-              src={WIN}
-              style={{ zIndex: activeCard === "gameOver" ? 10 : 0 }}
-            ></img>
             <section
               className="projectGamePlay"
-              src={WIN}
-              style={{ zIndex: activeCard === "gamePlay" ? 10 : 0 }}
+            //   src={WIN}
+            //   style={{ zIndex: activeCard === "gamePlay" ? 10 : 0 }}
             >
               <li
                 className="gpblurb"
                 style={{ opacity: activeCard === "gamePlay" ? 1 : 0 }}
               >
-                Rapid Api Calls for instant fast flowing game play
+                Rapid Api calls for instant fast flowing game play
               </li>
               <li
                 className="gpblurb"
@@ -115,7 +114,7 @@ export default function Projects() {
                 className="gpblurb"
                 style={{ opacity: activeCard === "gamePlay" ? 1 : 0 }}
               >
-                Asynch storgae for custom experience which tracks user progress
+                Async storgae for custom experience which tracks user progress
               </li>
               <li
                 className="gpblurb"
@@ -132,25 +131,19 @@ export default function Projects() {
                 className="howtoblurb"
                 style={{ opacity: activeCard === "howToPlay" ? 1 : 0 }}
               >
-                Rapid Api Calls for instant fast flowing game play
+               Breakdown of the rules and how to interprate the stats shown
               </li>
               <li
                 className="howtoblurb"
                 style={{ opacity: activeCard === "howToPlay" ? 1 : 0 }}
               >
-                Dynamic searchbar for first and surnames
+             A range of styling techniques are used, which ensure all elements are deliberately placed
               </li>
               <p
                 className="howtoblurb"
                 style={{ opacity: activeCard === "howToPlay" ? 1 : 0 }}
               >
-                mmbjb f nb nb nb nb
-              </p>
-              <p
-                className="howtoblurb"
-                style={{ opacity: activeCard === "howToPlay" ? 1 : 0 }}
-              >
-                Fun and compact styling for UX
+           In-play game styling reproduced, providing continuity and establishing a consistent theme
               </p>
             </section>
             <section
@@ -162,25 +155,24 @@ export default function Projects() {
                 className="goBlurb"
                 style={{ opacity: activeCard === "gameOver" ? 1 : 0 }}
               >
-                Rapid Api Calls for instant fast flowing game play
+               
               </p>
               <p
                 className="goBlurb"
                 style={{ opacity: activeCard === "gameOver" ? 1 : 0 }}
               >
-                Dynamic searchbar for first and surnames
+              Clear styling and custom alerts for winning or losing
+              </p>
+              <p
+                className="goBlurb"
+                style={{ opacity: activeCard === "gameOver" ? 1 : 0 }}
+              >Countdown shown for when the next round will be available
               </p>
               <p
                 className="goBlurb"
                 style={{ opacity: activeCard === "gameOver" ? 1 : 0 }}
               >
-                Asynch storgae for custom experience which tracks user progress
-              </p>
-              <p
-                className="goBlurb"
-                style={{ opacity: activeCard === "gameOver" ? 1 : 0 }}
-              >
-                Fun and compact styling for UX
+                on page visability a function will run to determine if the user is still timed out or if it's time for the next round
               </p>
             </section>
           </section>
