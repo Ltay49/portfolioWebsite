@@ -41,12 +41,14 @@ export default function Projects() {
           <section className="projectText">
             <p className="projpageBarc">Barclaysmen</p>
             <p className="blurb">
-              This project is a Daily Game, i was inspired by Wordle to produce
-              my own version but with a twist or Cruyf turn if you like...
-              instead of a 5 letter word the objective to guess which
-              Barclaysmen of the day it is. The game has 100+ players in all
-              steming from the Barclays Era of English top flight football with
-              an abundance of iconic players to choose from.{" "}
+              This project is a daily game. I was inspired by Wordle to produce
+              my own version, but with a twist (or Cruyff turn, if you like).
+              Instead of a 5-letter word, the objective is to guess which
+              Barclaysman of the day it is. The game has 100+ players in all,
+              stemming from the Barclays era of English top-flight football,
+              with an abundance of iconic players to choose from. Each day, a
+              new time-stamped player is fetched, ensuring all users have the
+              same player to guess
             </p>
           </section>
           <section className="projectVideo">
@@ -83,7 +85,7 @@ export default function Projects() {
               src={HOWTOPLAY}
               style={{ zIndex: activeCard === "howToPlay" ? 10 : 0 }}
             ></img>
-             <img
+            <img
               className="winPP"
               src={WIN}
               style={{ zIndex: activeCard === "gameOver" ? 10 : 0 }}
@@ -95,8 +97,8 @@ export default function Projects() {
             ></img>
             <section
               className="projectGamePlay"
-            //   src={WIN}
-            //   style={{ zIndex: activeCard === "gamePlay" ? 10 : 0 }}
+              //   src={WIN}
+              //   style={{ zIndex: activeCard === "gamePlay" ? 10 : 0 }}
             >
               <li
                 className="gpblurb"
@@ -131,19 +133,21 @@ export default function Projects() {
                 className="howtoblurb"
                 style={{ opacity: activeCard === "howToPlay" ? 1 : 0 }}
               >
-               Breakdown of the rules and how to interprate the stats shown
+                Breakdown of the rules and how to interprate the stats shown
               </li>
               <li
                 className="howtoblurb"
                 style={{ opacity: activeCard === "howToPlay" ? 1 : 0 }}
               >
-             A range of styling techniques are used, which ensure all elements are deliberately placed
+                A range of styling techniques are used, which ensure all
+                elements are deliberately placed
               </li>
               <p
                 className="howtoblurb"
                 style={{ opacity: activeCard === "howToPlay" ? 1 : 0 }}
               >
-           In-play game styling reproduced, providing continuity and establishing a consistent theme
+                In-play game styling reproduced, providing continuity and
+                establishing a consistent theme
               </p>
             </section>
             <section
@@ -154,25 +158,25 @@ export default function Projects() {
               <p
                 className="goBlurb"
                 style={{ opacity: activeCard === "gameOver" ? 1 : 0 }}
+              ></p>
+              <p
+                className="goBlurb"
+                style={{ opacity: activeCard === "gameOver" ? 1 : 0 }}
               >
-               
+                Clear styling and custom alerts for winning or losing
               </p>
               <p
                 className="goBlurb"
                 style={{ opacity: activeCard === "gameOver" ? 1 : 0 }}
               >
-              Clear styling and custom alerts for winning or losing
-              </p>
-              <p
-                className="goBlurb"
-                style={{ opacity: activeCard === "gameOver" ? 1 : 0 }}
-              >Countdown shown for when the next round will be available
+                Countdown shown for when the next round will be available
               </p>
               <p
                 className="goBlurb"
                 style={{ opacity: activeCard === "gameOver" ? 1 : 0 }}
               >
-                on page visability a function will run to determine if the user is still timed out or if it's time for the next round
+                On page visability a function will run to determine if the user
+                is still timed out or if it's time for the next round
               </p>
             </section>
           </section>
