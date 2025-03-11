@@ -195,7 +195,7 @@ header {
 
 @media (max-width: 500px) {
  .projpageBarc  {
-  margin-top:-50px;
+  margin-top: 0px;
   }
 }
 .backToProjects{
@@ -214,7 +214,12 @@ header {
   height: 1200px;
   width: 100%;
   right:0%;
-  opacity: .2;
+  opacity: .15;
+}
+
+.football {
+  /* height: auto;  Adjust the height based on the container or set a width */
+  max-height: 10%;  /* To prevent it from becoming too large */
 }
 
 .projectVideo{
@@ -489,37 +494,43 @@ border: solid grey 1px;
   z-index: 20;
 }
 .winPP{
-  border: green 2px groove;
-  box-shadow: 0px 0px 7px green; 
+  border-left: lightgreen 2px solid;
+  border-bottom: lightgreen 2px solid;
+  box-shadow: 0px 0px 7px black;
   position: absolute;
   width: 45%; /* Take up full width of the parent container */
   left:-1%;
   top:0%;
-  height: 90%;
+  height: 89%;
   object-fit: cover; /* Fill the container while preserving the aspect ratio */
   z-index: 1;
+  border-radius: 10px;
 }
 .gamePlayPP{
-  border: red 2px groove;
-  box-shadow: 0px 0px 7px red; 
+  border-left: lightcoral 2px solid;
+  border-bottom: lightcoral 2px solid;
+  box-shadow: 0px 0px 7px black;
   position: absolute;
   width: 45%; /* Take up full width of the parent container */
   left:-1%;
   top:0%;
-  height: 90%;
+  height: 89%;
   object-fit: cover; /* Fill the container while preserving the aspect ratio */
   z-index: 3;
+  border-radius: 10px;
 }
 .howToPlayPP{
-  border: lightblue 2px groove;
-  box-shadow: 0px 0px 7px lightblue; 
+  border-left: lightblue solid;
+  border-bottom: lightblue 2px solid;
+  box-shadow: 0px 0px 7px black;
   position: absolute;
   width: 45%; /* Take up full width of the parent container */
   left:-1%;
   top:0%;
-  height: 90%;
+  height: 89%;
   object-fit: cover; /* Fill the container while preserving the aspect ratio */
   z-index: 2;
+  border-radius: 10px;
 }
 .gptag{
   border: black solid 1px;
@@ -572,21 +583,30 @@ border: solid grey 1px;
 }
 
 .projectGamePlay{
-  background-color: rgb(243, 225, 225);
+  /* background-color: rgb(243, 225, 225); */
   position: absolute;
-  border-bottom: rgb(243, 225, 225) solid 2px;
+  border-bottom: black solid 2px;
+  border-right: black solid 2px;
   left:45%;
   top:0%;
-  height: 90%;
+  height: 89%;
   z-index:3;
-  contain: content
+  contain: content;
+  border-radius: 10px;
+  box-shadow: 0px 0px 7px black; 
   /* overflow-y: scroll; */
 }
 .gpblurb{
-  margin-top: 5px;
-  text-align: start;
+list-style-type: none; /* Remove default bullet */
+background-image: url('./assets/Football.png');
+background-repeat: no-repeat;
+background-position: left top;
+background-size: 10%;
+margin-top: 5px;
+text-align: start;
 font-size: 100%;
-padding-left: 5px;
+margin-top: 15px;
+padding-left: 30px;
 font-family: 'Varela Round', sans-serif;
 }
 .gpblurb1{
@@ -597,24 +617,29 @@ padding-left: 5px;
 font-family: 'Varela Round', sans-serif;
 }
 .projectHowToPlay{
-  background-color: rgb(227, 239, 243);
-  opacity: 0.5;
+  /* background-color: rgb(227, 239, 243); */
+  opacity: 1;
   position: absolute;
-  /* border: black solid 1px; */
+  /* border-bottom: black solid 2px;
+  border-top: black solid 2px; */
+  border-radius: 10px;
   left:45%;
   top:0%;
-  height: 90%;
+  height: 89%;
   width: 55%;
   z-index:2;
 }
 .projectGameOver{
-  background-color: rgb(223, 242, 223);
-  opacity: 0.5;
+  /* border-bottom: black solid 2px;
+  border-top: black solid 2px; */
+  border-radius: 10px;
+  /* background-color: rgb(223, 242, 223); */
+  opacity: 1;
   position: absolute;
   /* border: black solid 1px; */
   left:45%;
   top:0%;
-  height: 90%;
+  height: 89%;
   width: 55%;
   z-index:1;
 }

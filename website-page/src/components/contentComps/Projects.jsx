@@ -14,6 +14,7 @@ import Mongoose from "../../assets/mongoose.png";
 import Netlify from "../../assets/netlify.png";
 import Railway from "../../assets/Railway.png";
 import ReactNative from "../../assets/ReactNative.png";
+import Football from "../../assets/Football.png";
 
 export default function Projects() {
   const [activeCard, setActiveCard] = useState(null);
@@ -50,11 +51,13 @@ export default function Projects() {
             </p>
           </section>
           <section className="projectVideo">
-            <button className="gptag" 
+            <button
+              className="gptag"
               style={{
                 border: activeCard === "gamePlay" ? "black solid 1px" : "none",
               }}
-            onClick={() => setActiveCard("gamePlay")}>
+              onClick={() => setActiveCard("gamePlay")}
+            >
               game play
             </button>
             <button
@@ -79,67 +82,106 @@ export default function Projects() {
             <img
               className="howToPlayPP"
               src={HOWTOPLAY}
-              style={{ zIndex: activeCard === "howToPlay" ? 10 : 2 }}
+              style={{ zIndex: activeCard === "howToPlay" ? 10 : 0 }}
             ></img>
             <img
               className="gamePlayPP"
               src={GAMEPLAY}
-              style={{ zIndex: activeCard === "gamePlay" ? 10 : 3 }}
+              style={{ zIndex: activeCard === "gamePlay" ? 10 : 0 }}
             ></img>
             <img
               className="winPP"
               src={WIN}
-              style={{ zIndex: activeCard === "gameOver" ? 10 : 1 }}
+              style={{ zIndex: activeCard === "gameOver" ? 10 : 0 }}
             ></img>
             <section
               className="projectGamePlay"
               src={WIN}
-              style={{ zIndex: activeCard === "gamePlay" ? 10 : 3 }}
+              style={{ zIndex: activeCard === "gamePlay" ? 10 : 0 }}
             >
-              {/* <button className="gptagTop" onClick={() => setActiveCard('gamePlay')}>game play</button> */}
-              <p className="gpblurb">
+              <li
+                className="gpblurb"
+                style={{ opacity: activeCard === "gamePlay" ? 1 : 0 }}
+              >
                 Rapid Api Calls for instant fast flowing game play
-              </p>
-              <p className="gpblurb1">
+              </li>
+              <li
+                className="gpblurb"
+                style={{ opacity: activeCard === "gamePlay" ? 1 : 0 }}
+              >
                 Dynamic searchbar for first and surnames
-              </p>
-              <p className="gpblurb1">
+              </li>
+              <li
+                className="gpblurb"
+                style={{ opacity: activeCard === "gamePlay" ? 1 : 0 }}
+              >
                 Asynch storgae for custom experience which tracks user progress
-              </p>
-              <p className="gpblurb1">Fun and compact styling for UX</p>
-              {/* <button className="gptag" onClick={() => setActiveCard('gamePlay')}>game play</button> */}
+              </li>
+              <li
+                className="gpblurb"
+                style={{ opacity: activeCard === "gamePlay" ? 1 : 0 }}
+              >
+                Fun and compact styling for UX
+              </li>
             </section>
             <section
               className="projectHowToPlay"
-              style={{ zIndex: activeCard === "howToPlay" ? 10 : 2 }}
+              style={{ zIndex: activeCard === "howToPlay" ? 10 : 0 }}
             >
-              <p className="gpblurb">
+              <li
+                className="howtoblurb"
+                style={{ opacity: activeCard === "howToPlay" ? 1 : 0 }}
+              >
                 Rapid Api Calls for instant fast flowing game play
-              </p>
-              <p className="gpblurb1">
+              </li>
+              <li
+                className="howtoblurb"
+                style={{ opacity: activeCard === "howToPlay" ? 1 : 0 }}
+              >
                 Dynamic searchbar for first and surnames
+              </li>
+              <p
+                className="howtoblurb"
+                style={{ opacity: activeCard === "howToPlay" ? 1 : 0 }}
+              >
+                mmbjb f nb nb nb nb
               </p>
-              <p className="gpblurb1">
-                Asynch storgae for custom experience which tracks user progress
+              <p
+                className="howtoblurb"
+                style={{ opacity: activeCard === "howToPlay" ? 1 : 0 }}
+              >
+                Fun and compact styling for UX
               </p>
-              <p className="gpblurb1">Fun and compact styling for UX</p>
-              {/* <button className="howtotagTop" onClick={() => setActiveCard('howToPlay')}>how to play</button> */}
             </section>
             <section
               className="projectGameOver"
-              style={{ zIndex: activeCard === "gameOver" ? 10 : 1 }}
+              style={{ zIndex: activeCard === "gameOver" ? 10 : 0 }}
             >
               {/* <button className="gotagTop" onClick={() => setActiveCard('gameOver')}>game over</button> */}
-              <p className="gpblurb">
+              <p
+                className="goBlurb"
+                style={{ opacity: activeCard === "gameOver" ? 1 : 0 }}
+              >
                 Rapid Api Calls for instant fast flowing game play
               </p>
-              <p className="gpblurb1">
+              <p
+                className="goBlurb"
+                style={{ opacity: activeCard === "gameOver" ? 1 : 0 }}
+              >
                 Dynamic searchbar for first and surnames
               </p>
-              <p className="gpblurb1">
+              <p
+                className="goBlurb"
+                style={{ opacity: activeCard === "gameOver" ? 1 : 0 }}
+              >
                 Asynch storgae for custom experience which tracks user progress
               </p>
-              <p className="gpblurb1">Fun and compact styling for UX</p>
+              <p
+                className="goBlurb"
+                style={{ opacity: activeCard === "gameOver" ? 1 : 0 }}
+              >
+                Fun and compact styling for UX
+              </p>
             </section>
           </section>
           <section className="projectStack">
