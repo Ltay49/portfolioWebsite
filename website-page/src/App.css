@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
 
 
 
@@ -18,7 +19,7 @@ body {
   color: black;        /* Make body a flex container */
   flex-direction: column; /* Stack children (header, content, footer) vertically */
   min-height: 100vh;  
-  font-family: 'Fira Code', monospace;    /* Ensure the body takes up at least the full height of the viewport */
+  font-family: 'Fira Code', monospace;
 }
 .navBar{
 margin-left: 5px;
@@ -92,6 +93,7 @@ header {
  text-align: left;
  height: 168px;
 }
+
 .projectTitle{
 
   justify-content: flex-end;
@@ -186,7 +188,7 @@ footer {
   color: #0063A1;
   text-align: center;
   font-size: 2em;
-  margin-top: 0px;
+  margin-top:-80px;
 }
 .backToProjects{
   position: absolute;
@@ -479,33 +481,33 @@ border: solid grey 1px;
   z-index: 20;
 }
 .winPP{
-  border: green 1px groove;
+  border: green 2px groove;
   box-shadow: 0px 0px 7px green; 
   position: absolute;
   width: 45%; /* Take up full width of the parent container */
-  left:0;
+  left:-1%;
   top:0%;
   height: 90%;
   object-fit: cover; /* Fill the container while preserving the aspect ratio */
   z-index: 1;
 }
 .gamePlayPP{
-  border: red 1px groove;
+  border: red 2px groove;
   box-shadow: 0px 0px 7px red; 
   position: absolute;
   width: 45%; /* Take up full width of the parent container */
-  left:0%;
+  left:-1%;
   top:0%;
   height: 90%;
   object-fit: cover; /* Fill the container while preserving the aspect ratio */
   z-index: 3;
 }
 .howToPlayPP{
-  border: lightblue 1px groove;
+  border: lightblue 2px groove;
   box-shadow: 0px 0px 7px lightblue; 
   position: absolute;
   width: 45%; /* Take up full width of the parent container */
-  left:0%;
+  left:-1%;
   top:0%;
   height: 90%;
   object-fit: cover; /* Fill the container while preserving the aspect ratio */
@@ -526,20 +528,7 @@ border: solid grey 1px;
   font-family: 'Luckiest Guy', cursive;
   text-align: center;
 }
-.gptagTop{
-  padding-top: 7px;
-  text-align: left;
-  border-radius: 2px;
-  position: absolute;
-  left:0%;
-  top:0%;
-  font-size: 1em;
-  background-color: rgb(244, 192, 192);
-  padding-left: 2px;
-  border: none;
-  width:100%;
-  font-family: 'Luckiest Guy', cursive;
-}
+
 .gotag{
   text-align: right;
   font-family: 'Luckiest Guy', cursive;
@@ -556,20 +545,7 @@ border: solid grey 1px;
   padding-top: 7px;
   text-align: center;
 }
-.gotagTop{
-  padding-top: 7px;
-  text-align: left;
-  font-family: 'Luckiest Guy', cursive;
-  border-radius: 2px;
-  position: absolute;
-  left:0%;
-  top:0%;
-  font-size: 1em;
-  background-color: rgb(191, 230, 191);
-  padding-left: 2px;
-  border: none;
-  width:100%
-}
+
 .howtotag{
   border-radius: 5px;
   text-align: right;
@@ -586,20 +562,7 @@ border: solid grey 1px;
   padding-top: 7px;
   text-align: center;
 }
-.howtotagTop{
-  text-align: left;
-  font-family: 'Luckiest Guy', cursive;
-  border-radius: 2px;
-  position: absolute;
-  left:0%;
-  top:0%;
-  font-size: 1em;
-  background-color: lightblue;
-  padding-left: 2px;
-  border: none;
-  width:100%;
-  padding-top:7px;
-}
+
 .projectGamePlay{
   background-color: rgb(243, 225, 225);
   position: absolute;
@@ -607,7 +570,6 @@ border: solid grey 1px;
   left:45%;
   top:0%;
   height: 90%;
-  /* width: 100%; */
   z-index:3;
   contain: content
   /* overflow-y: scroll; */
@@ -615,17 +577,20 @@ border: solid grey 1px;
 .gpblurb{
   margin-top: 5px;
   text-align: start;
-font-size: 85%;
+font-size: 100%;
 padding-left: 5px;
+font-family: 'Varela Round', sans-serif;
 }
 .gpblurb1{
 margin-top: -5px;
 text-align: start;
-font-size: 85%;
+font-size: 100%;
 padding-left: 5px;
+font-family: 'Varela Round', sans-serif;
 }
 .projectHowToPlay{
   background-color: rgb(227, 239, 243);
+  opacity: 0.5;
   position: absolute;
   /* border: black solid 1px; */
   left:45%;
@@ -636,6 +601,7 @@ padding-left: 5px;
 }
 .projectGameOver{
   background-color: rgb(223, 242, 223);
+  opacity: 0.5;
   position: absolute;
   /* border: black solid 1px; */
   left:45%;
@@ -690,8 +656,24 @@ padding-left: 5px;
   font-size: 3em;
   margin-right: 5px;
   width:165px
-
-
+}
+}
+@media (max-width: 500px) { #titles{
+  font-size: 1em;
+  margin-right: 0px;
+  height: 80px;
+  width:105px;
+  margin-bottom: 45px;
+  padding-left: 5px;
+  border-left: black solid;
+  text-align: left;
+}
+}
+@media (max-width: 500px) { #name{
+  margin-top: 35px;
+font-size: 2em;
+margin-right: 5px;
+width:113px
 }
 }
 #NCtext{
@@ -773,12 +755,15 @@ padding-left: 5px;
 }
 
 .blurb{
-  padding: 5px;
+  padding-top: 5px;
   justify-content: center;
   align-content: center;
   margin-top: -35px;
-  /* position: absolute;
-  top: 10%; */
+  font-family: 'Varela Round', sans-serif;
+  /* position: absolute; */
+  /* height: 50%; */
+ margin-left: 10px;
+  width: 90%;
 }
 
 /* .ELText{
