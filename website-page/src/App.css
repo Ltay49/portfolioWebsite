@@ -609,6 +609,13 @@ margin-top: 15px;
 padding-left: 30px;
 font-family: 'Varela Round', sans-serif;
 }
+@media (max-width: 768px) {
+  .gpblurb {
+    font-size: 90%;
+    margin-top: 10px;
+  }
+}
+
 .gpblurb1{
 margin-top: -5px;
 text-align: start;
