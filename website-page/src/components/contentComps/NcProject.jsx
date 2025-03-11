@@ -6,6 +6,7 @@ import HOWTOPLAY from "../../assets/BarclaysMen.jpeg";
 import GAMEPLAY from "../../assets/BarclaysMen 2.jpeg";
 import WIN from "../../assets/BarclaysMen 3.jpeg";
 import GeneralLayout from "../../assets/GeneralLayout.png"
+import IndividualArt from "../../assets/IndividualArt.png"
 
 
 export default function NcProject({projectPageNc,setProjectPageNc }) {
@@ -36,26 +37,26 @@ export default function NcProject({projectPageNc,setProjectPageNc }) {
         </section>
         <section className="projectVideo">
           <button
-            className="gltag"
+            className="gltaga"
             style={{
               border: activeCard === "gamePlay" ? "black solid 1px" : "none",
             }}
             onClick={() => setActiveCard("gamePlay")}
           >
-            general
+            layout (a)
           </button>
           <button
-            className="howtotag"
+            className="gltagb"
             style={{
               border: activeCard === "howToPlay" ? "black solid 1px" : "none",
               // opacity: activeCard === "howToPlay" ? "1" : "0.5"
             }}
             onClick={() => setActiveCard("howToPlay")}
           >
-            ux
+            layout (b)
           </button>
           <button
-            className="gotag"
+            className="featurestag"
             style={{
               border: activeCard === "gameOver" ? "black solid 1px" : "none",
             }}
@@ -63,11 +64,11 @@ export default function NcProject({projectPageNc,setProjectPageNc }) {
           >
            features
           </button>
-          {/* <img
+          <img
             className="howToPlayPP"
-            src={HOWTOPLAY}
+            src={IndividualArt}
             style={{ zIndex: activeCard === "howToPlay" ? 10 : 0 }}
-          ></img> */}
+          ></img>
           {/* <img
             className="winPP"
             src={WIN}
