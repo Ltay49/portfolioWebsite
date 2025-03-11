@@ -837,7 +837,7 @@ width:113px
     left:0%;
     border-radius: 5px;
     bottom: 0%;
-    font-size: 1em;
+    font-size: .9em;
     background-color:lightcoral;
     padding-left: 2px;
     border: none;
@@ -854,13 +854,14 @@ width:113px
     left:25%;
     border-radius: 5px;
     bottom: 0%;
-    font-size: 1em;
+    font-size: .9em;
     background-color:lightblue;
     padding-left: 2px;
     border: none;
     width:25%;
     padding-top: 2px;
     text-align: center;
+    contain: content;
   }
   .featurestag{
     text-align: right;
@@ -871,7 +872,7 @@ width:113px
     left:50%;
     border-radius: 5px;
     bottom: 0%;
-    font-size: 1em;
+    font-size: .9em;
     background-color:rgb(166, 224, 166);
     padding-left: 2px;
     border: none;
