@@ -7,6 +7,7 @@ import GAMEPLAY from "../../assets/BarclaysMen 2.jpeg";
 import WIN from "../../assets/BarclaysMen 3.jpeg";
 import GeneralLayout from "../../assets/GeneralLayout.png"
 import IndividualArt from "../../assets/IndividualArt.png"
+import Users from "../../assets/users.png"
 
 
 export default function NcProject({projectPageNc,setProjectPageNc }) {
@@ -35,7 +36,8 @@ export default function NcProject({projectPageNc,setProjectPageNc }) {
          This was my first full stack finished project, completed whilst at Northcoders. Over the course of 2 weeks I produced a solid backend complimeted with rigouros testing for all eventualities including 20+ SQL queries and 10+ Restful API's including GET,PATCH,POST and DELETE requests as well as error handling. The front end built in React has dynamin routes and 'useContext' for customised UX as well as exemples of other React Hooks.
           </p>
         </section>
-        <section className="projectVideo">
+        <section className="projectVideo"
+        >
           <button
             className="gltaga"
             style={{
@@ -65,30 +67,38 @@ export default function NcProject({projectPageNc,setProjectPageNc }) {
            features
           </button>
           <img
-            className="howToPlayPP"
+            className="articlePP"
             src={IndividualArt}
-            style={{ zIndex: activeCard === "howToPlay" ? 10 : 0 }}
+            style={{ zIndex: activeCard === "howToPlay" ? 10 : 0,
+                opacity: activeCard === "howToPlay" ? 1 : 0  }}
           ></img>
-          {/* <img
-            className="winPP"
-            src={WIN}
-            style={{ zIndex: activeCard === "gameOver" ? 10 : 0 }}
-          ></img> */}
-          <section className="overflow">
+          <img
+            className="usersPP"
+            src={Users}
+            style={{ zIndex: activeCard === "gameOver" ? 10 : 0,
+            opacity: activeCard === "howToPlay" ? 1 : 0 }}
+          ></img>
+          <section className="overflow"
+             style={{ opacity: activeCard === "gamePlay" ? 1 : 0,
+            }}>
           <img
             className="generalLayoutPP"
             src={GeneralLayout}
-            style={{ zIndex: activeCard === "gamePlay" ? 10 : 0 }}
+            style={{ zIndex: activeCard === "gamePlay" ? 10 : 0,
+                    opacity: activeCard === "gamePlay" ? 1 : 0}}
           ></img>
             </section>
           <section
             className="projectGeneralLayout"
-            //   src={WIN}
-            //   style={{ zIndex: activeCard === "gamePlay" ? 10 : 0 }}
+            style={{
+                border: activeCard === "gamePlay" ? "black solid 1px" : "none",
+                opacity: activeCard === "gamePlay" ? 1 : 0
+              }}
           >
             <li
               className="gpblurb"
-              style={{ opacity: activeCard === "gamePlay" ? 1 : 0 }}
+              style={{ opacity: activeCard === "gamePlay" ? 1 : 0,
+             }}
             >
              
             </li>
@@ -112,8 +122,8 @@ export default function NcProject({projectPageNc,setProjectPageNc }) {
             </li>
           </section>
           <section
-            className="projectHowToPlay"
-            style={{ zIndex: activeCard === "howToPlay" ? 10 : 0 }}
+            className="projectlayoutB"
+            style={{ opacity: activeCard === "howToPlay" ? 1 : 0 }}
           >
             <li
               className="howtoblurb"
