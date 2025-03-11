@@ -10,7 +10,7 @@ function App() {
     <div className='mainScreenContainer'>
       <Header/>
       <Content/>
-      <Footer/>
+      {/* <Footer/> */}
     </div>
   )
 }
