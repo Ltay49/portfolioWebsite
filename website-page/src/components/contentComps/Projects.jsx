@@ -14,25 +14,35 @@ import Mongoose from "../../assets/mongoose.png";
 import Netlify from "../../assets/netlify.png";
 import Railway from "../../assets/Railway.png";
 import ReactNative from "../../assets/ReactNative.png";
+import NcProject from "./NcProject";
 
 export default function Projects() {
   const [activeCard, setActiveCard] = useState("gamePlay");
-  const [projectPage, setProjectPage] = useState(false);
+  const [projectPageB, setProjectPageB] = useState(false);
+  const [projectPageNc, setProjectPageNc] = useState(false);
 
-  const newPageHandler = () => {
-    setProjectPage(true);
+  const newPageHandlerB = () => {
+    setProjectPageB(true);
 
-    if (projectPage) {
-      setProjectPage(false);
+    if (projectPageB) {
+      setProjectPageB(false);
+    }
+  };
+
+  const newPageHandlerNc = () => {
+    setProjectPageNc(true);
+
+    if (projectPageB) {
+      setProjectPageNc(false);
     }
   };
 
   return (
     <div className="projects" id="projects">
-      {projectPage ? (
+      {projectPageB ? (
         <section className="projectPage" id="projects">
           <section>
-            <button className="backToProjects" onClick={newPageHandler}>
+            <button className="backToProjects" onClick={newPageHandlerB}>
               back to projects
             </button>
           </section>
@@ -193,7 +203,9 @@ export default function Projects() {
             <img className="Expo" src={ReactNative}></img>
           </section>
         </section>
-      ) : (
+      ) : projectPageNc ?(
+        <NcProject projectPageNc={projectPageNc} setProjectPageNc={setProjectPageNc}/>
+       ) : (
         <>
           <section className="project1">
             <h4 className="Projtitle" id="NCtext">
@@ -201,7 +213,7 @@ export default function Projects() {
             </h4>
             <p className="Projtag">'endpoints galore'</p>
             <section className="Projbutton">
-              <button className="btnStyle" onClick={newPageHandler}>
+              <button className="btnStyle" onClick={newPageHandlerNc}>
                 learn more here!
               </button>
             </section>
@@ -223,9 +235,9 @@ export default function Projects() {
             </h4>
             <p className="Projtag">'europe under one roof'</p>
             <section className="Projbutton">
-              <button className="btnStyle" onClick={newPageHandler}>
+              {/* <button className="btnStyle" onClick={newPageHandler}>
                 learn more here!
-              </button>
+              </button> */}
             </section>
             <video
               className="hoverVideo"
@@ -241,7 +253,7 @@ export default function Projects() {
             </h4>
             <p className="Projtag">'Okocha! Viduka! Lua Lua!'</p>
             <section className="Projbutton">
-              <button className="btnStyle" onClick={newPageHandler}>
+              <button className="btnStyle" onClick={newPageHandlerB}>
                 learn more here!
               </button>
             </section>
