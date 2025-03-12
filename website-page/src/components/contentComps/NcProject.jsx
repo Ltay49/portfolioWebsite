@@ -1,14 +1,9 @@
 import { useState } from "react";
 import NcNewsBack from "../../assets/NcNewsBack.png"
 import JS from "../../assets/JS.png";
-import Netlify from "../../assets/netlify.png";
-import HOWTOPLAY from "../../assets/BarclaysMen.jpeg";
-import GAMEPLAY from "../../assets/BarclaysMen 2.jpeg";
-import WIN from "../../assets/BarclaysMen 3.jpeg";
 import GridLayout from "../../assets/GridLayout1.png"
 import IndividualArt from "../../assets/IndividualArt1.png"
-import FeatureA from "../../assets/featuresA.png"
-import Topics from "../../assets/topicSelector.png"
+import NCVID from "../../assets/nc_news.mp4";
 
 
 export default function NcProject({projectPageNc,setProjectPageNc }) {
@@ -46,7 +41,7 @@ export default function NcProject({projectPageNc,setProjectPageNc }) {
             }}
             onClick={() => setActiveCard("layout(a)")}
           >
-            layout(a)
+            main
           </button>
           <button
             className="gltagb"
@@ -56,7 +51,7 @@ export default function NcProject({projectPageNc,setProjectPageNc }) {
             }}
             onClick={() => setActiveCard("layout(b)")}
           >
-            layout(b)
+            article
           </button>
           <button
             className="featurestag"
@@ -65,7 +60,7 @@ export default function NcProject({projectPageNc,setProjectPageNc }) {
             }}
             onClick={() => setActiveCard("features(a)")}
           >
-           features(a)
+          video
           </button>
           <button
             className="fttagb"
@@ -74,7 +69,7 @@ export default function NcProject({projectPageNc,setProjectPageNc }) {
             }}
             onClick={() => setActiveCard("features(b)")}
           >
-            features(b)
+            features
           </button>
           <img
             className="articlePP"
@@ -83,26 +78,22 @@ export default function NcProject({projectPageNc,setProjectPageNc }) {
                 opacity: activeCard === "layout(b)" ? 1 : 0  }}
           ></img>
           <img
-            className="usersPP"
-            src={FeatureA}
-            style={{ zIndex: activeCard === "features(a)" ? 10 : 0,
-            opacity: activeCard === "features(a)" ? 1 : 0 }}
-          ></img>
-            <img
-            className="topicsPP"
-            src={Topics}
-            style={{ zIndex: activeCard === "features(a)" ? 10 : 0,
-            opacity: activeCard === "features(a)" ? 1 : 0 }}
-          ></img>
-          {/* <section className="overflow"
-             style={{ opacity: activeCard === "gamePlay" ? 1 : 0,
-            }}> */}
-          <img
             className="generalLayoutPP"
             src={GridLayout}
             style={{ zIndex: activeCard === "layout(a)" ? 10 : 0,
                     opacity: activeCard === "layout(a)" ? 1 : 0}}
           ></img>
+             <video
+              className="hoverVideo1"
+              src={NCVID}
+              autoPlay
+              loop
+              muted
+              playsInline
+              preload="auto"
+              style={{ zIndex: activeCard === "featues(a)" ? 10 : 0,
+              opacity: activeCard === "features(a)" ? 1 : 0}}
+            ></video>
             {/* </section> */}
           <section
             className="projectGeneralLayout"
@@ -112,7 +103,7 @@ export default function NcProject({projectPageNc,setProjectPageNc }) {
               }}
           >
             <li
-              className="gpblurb"
+              className="glblurb"
               style={{ opacity: activeCard === "layout(a)" ? 1 : 0,
              }}
             >
@@ -162,29 +153,29 @@ export default function NcProject({projectPageNc,setProjectPageNc }) {
           </section>
           <section
             className="featuresA"
-            style={{ zIndex: activeCard === "features(a)" ? 9 : 0,
-            opacity: activeCard === "features(a)" ? 1 : 0 }}
+            style={{ zIndex: activeCard === "features(b)" ? 9 : 0,
+            opacity: activeCard === "features(b)" ? 1 : 0 }}
           >
             {/* <button className="gotagTop" onClick={() => setActiveCard('gameOver')}>game over</button> */}
             <p
               className="goBlurb"
-              style={{ opacity: activeCard === "features(a)" ? 1 : 0 }}
+              style={{ opacity: activeCard === "features(b)" ? 1 : 0 }}
             ></p>
             <p
               className="goBlurb"
-              style={{ opacity: activeCard === "features(a)" ? 1 : 0 }}
+              style={{ opacity: activeCard === "features(b)" ? 1 : 0 }}
             >
         
             </p>
             <p
               className="goBlurb"
-              style={{ opacity: activeCard === "features(a)" ? 1 : 0 }}
+              style={{ opacity: activeCard === "features(b)" ? 1 : 0 }}
             >
     
             </p>
             <p
               className="goBlurb"
-              style={{ opacity: activeCard === "features(a)" ? 1 : 0 }}
+              style={{ opacity: activeCard === "features(b)" ? 1 : 0 }}
             >
         
             </p>

@@ -919,9 +919,7 @@ width:113px
     border: solid 1px black;
     box-shadow: 0px 0px 7px black;
   } */
-  .generalLayoutPP, .articlePP{
-    /* border-left: lightgreen 2px solid;
-    border-bottom: lightgreen 2px solid; */
+  .generalLayoutPP, .articlePP, .postPP{
     box-shadow: 0px 0px 7px black;
     position: absolute;
     width: 56%;
@@ -932,32 +930,7 @@ width:113px
     z-index: 1;
     border-radius: 10px;
   }
-  .usersPP{
-    box-shadow: 0px 0px 7px black;
-    position: absolute;
-    width: 56%;
-    left:-1%;
-    top:26%;
-    height: 67%;
-    object-fit: cover;
-    z-index: 1;
-border-radius: 10px;
-  }
-  .topicsPP{
-    box-shadow: 0px 0px 7px black;
-    position: absolute;
-    width: 56%;
-    left:-1%;
-    top:0%;
-    height: 30%;
-    object-fit: cover;
-    z-index: 1;
-    border-top: black solid 2px;
-    border-radius: 10px;
-    border-bottom: solid 2px;
-  }
-  
-  .projectlayoutB, .projectGeneralLayout, .featuresA, .featuresB{
+  .projectlayoutB, .projectGeneralLayout{
     opacity: 1;
     position: absolute;
     border-bottom: black solid 1px;
@@ -973,3 +946,48 @@ border-radius: 10px;
     z-index:2;
     box-shadow: 0px 0px 7px black;
   }
+  .featuresA{
+    opacity: 1;
+    position: absolute;
+    border-bottom: black solid 1px;
+    border-top: black solid 1px;
+    border-right: black solid 1px;;
+    border-radius: 10px;
+    left:-1%;
+    top:0%;
+    height: 92%;
+    width: 103%;
+    z-index:2;
+    box-shadow: 0px 0px 7px black;
+
+  }
+
+  .glblurb{
+    list-style-type: none; /* Remove default bullet */
+    background-image: url('./assets/Pencil.png');
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 10%;
+    background-position-x: 15px;
+    background-position-y: 1px;
+    margin-top: 5px;
+    text-align: start;
+    font-size: 100%;
+    margin-top: 15px;
+    padding-left: 40px;
+    font-family: 'Varela Round', sans-serif;
+    }
+
+    .hoverVideo1{
+      border: solid 1px;
+      box-shadow: 0px 0px 7px black;
+      position: absolute;
+      width: 103%; /* Take up full width of the parent container */
+      left:-1%;
+      top:5%;
+      height: 80%;
+      object-fit: cover; /* Fill the container while preserving the aspect ratio */
+      border-radius: 10px; 
+      z-index: 1;
+
+    }
