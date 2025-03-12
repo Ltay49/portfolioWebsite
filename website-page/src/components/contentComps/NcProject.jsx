@@ -7,12 +7,13 @@ import GAMEPLAY from "../../assets/BarclaysMen 2.jpeg";
 import WIN from "../../assets/BarclaysMen 3.jpeg";
 import GridLayout from "../../assets/GridLayout1.png"
 import IndividualArt from "../../assets/IndividualArt1.png"
-import Users from "../../assets/users.png"
+import FeatureA from "../../assets/featuresA.png"
+import Topics from "../../assets/topicSelector.png"
 
 
 export default function NcProject({projectPageNc,setProjectPageNc }) {
 
-    const [activeCard, setActiveCard] = useState("gamePlay");
+    const [activeCard, setActiveCard] = useState("layout(a)");
 
     const newPageHandlerNc = () => {
         setProjectPageNc(true);
@@ -41,42 +42,57 @@ export default function NcProject({projectPageNc,setProjectPageNc }) {
           <button
             className="gltaga"
             style={{
-              border: activeCard === "gamePlay" ? "black solid 1px" : "none",
+              border: activeCard === "layout(a)" ? "black solid 1px" : "none",
             }}
-            onClick={() => setActiveCard("gamePlay")}
+            onClick={() => setActiveCard("layout(a)")}
           >
-            layout (a)
+            layout(a)
           </button>
           <button
             className="gltagb"
             style={{
-              border: activeCard === "howToPlay" ? "black solid 1px" : "none",
+              border: activeCard === "layout(b)" ? "black solid 1px" : "none",
               // opacity: activeCard === "howToPlay" ? "1" : "0.5"
             }}
-            onClick={() => setActiveCard("howToPlay")}
+            onClick={() => setActiveCard("layout(b)")}
           >
-            layout (b)
+            layout(b)
           </button>
           <button
             className="featurestag"
             style={{
-              border: activeCard === "gameOver" ? "black solid 1px" : "none",
+              border: activeCard === "features(a)" ? "black solid 1px" : "none",
             }}
-            onClick={() => setActiveCard("gameOver")}
+            onClick={() => setActiveCard("features(a)")}
           >
-           features (a)
+           features(a)
+          </button>
+          <button
+            className="fttagb"
+            style={{
+              border: activeCard === "features(b)" ? "black solid 1px" : "none",
+            }}
+            onClick={() => setActiveCard("features(b)")}
+          >
+            features(b)
           </button>
           <img
             className="articlePP"
             src={IndividualArt}
-            style={{ zIndex: activeCard === "howToPlay" ? 10 : 0,
-                opacity: activeCard === "howToPlay" ? 1 : 0  }}
+            style={{ zIndex: activeCard === "layout(b)" ? 10 : 0,
+                opacity: activeCard === "layout(b)" ? 1 : 0  }}
           ></img>
           <img
             className="usersPP"
-            src={Users}
-            style={{ zIndex: activeCard === "gameOver" ? 10 : 0,
-            opacity: activeCard === "gameOver" ? 1 : 0 }}
+            src={FeatureA}
+            style={{ zIndex: activeCard === "features(a)" ? 10 : 0,
+            opacity: activeCard === "features(a)" ? 1 : 0 }}
+          ></img>
+            <img
+            className="topicsPP"
+            src={Topics}
+            style={{ zIndex: activeCard === "features(a)" ? 10 : 0,
+            opacity: activeCard === "features(a)" ? 1 : 0 }}
           ></img>
           {/* <section className="overflow"
              style={{ opacity: activeCard === "gamePlay" ? 1 : 0,
@@ -84,94 +100,101 @@ export default function NcProject({projectPageNc,setProjectPageNc }) {
           <img
             className="generalLayoutPP"
             src={GridLayout}
-            style={{ zIndex: activeCard === "gamePlay" ? 10 : 0,
-                    opacity: activeCard === "gamePlay" ? 1 : 0}}
+            style={{ zIndex: activeCard === "layout(a)" ? 10 : 0,
+                    opacity: activeCard === "layout(a)" ? 1 : 0}}
           ></img>
             {/* </section> */}
           <section
             className="projectGeneralLayout"
             style={{
                 // border: activeCard === "gamePlay" ? "black solid 1px" : "none",
-                opacity: activeCard === "gamePlay" ? 1 : 0
+                opacity: activeCard === "layout(a)" ? 1 : 0
               }}
           >
             <li
               className="gpblurb"
-              style={{ opacity: activeCard === "gamePlay" ? 1 : 0,
+              style={{ opacity: activeCard === "layout(a)" ? 1 : 0,
              }}
             >
-             
+             grid style
             </li>
             <li
               className="gpblurb"
-              style={{ opacity: activeCard === "gamePlay" ? 1 : 0 }}
+              style={{ opacity: activeCard === "layout(a)" ? 1 : 0 }}
             >
              
             </li>
             <li
               className="gpblurb"
-              style={{ opacity: activeCard === "gamePlay" ? 1 : 0 }}
+              style={{ opacity: activeCard === "layout(a)" ? 1 : 0 }}
             >
 
             </li>
             <li
               className="gpblurb"
-              style={{ opacity: activeCard === "gamePlay" ? 1 : 0 }}
+              style={{ opacity: activeCard === "layout(a)" ? 1 : 0 }}
             >
             
             </li>
           </section>
           <section
             className="projectlayoutB"
-            style={{ opacity: activeCard === "howToPlay" ? 1 : 0 }}
+            style={{ opacity: activeCard === "layout(b)" ? 1 : 0 }}
           >
             <li
               className="howtoblurb"
-              style={{ opacity: activeCard === "howToPlay" ? 1 : 0 }}
+              style={{ opacity: activeCard === "layout(b)" ? 1 : 0 }}
             >
      
             </li>
             <li
               className="howtoblurb"
-              style={{ opacity: activeCard === "howToPlay" ? 1 : 0 }}
+              style={{ opacity: activeCard === "layout(b)" ? 1 : 0 }}
             >
             
             </li>
             <p
               className="howtoblurb"
-              style={{ opacity: activeCard === "howToPlay" ? 1 : 0 }}
+              style={{ opacity: activeCard === "layout(b)" ? 1 : 0 }}
             >
             
             </p>
           </section>
           <section
-            className="projectGameOver"
-            style={{ zIndex: activeCard === "gameOver" ? 10 : 0 }}
+            className="featuresA"
+            style={{ zIndex: activeCard === "features(a)" ? 9 : 0,
+            opacity: activeCard === "features(a)" ? 1 : 0 }}
           >
             {/* <button className="gotagTop" onClick={() => setActiveCard('gameOver')}>game over</button> */}
             <p
               className="goBlurb"
-              style={{ opacity: activeCard === "gameOver" ? 1 : 0 }}
+              style={{ opacity: activeCard === "features(a)" ? 1 : 0 }}
             ></p>
             <p
               className="goBlurb"
-              style={{ opacity: activeCard === "gameOver" ? 1 : 0 }}
+              style={{ opacity: activeCard === "features(a)" ? 1 : 0 }}
             >
         
             </p>
             <p
               className="goBlurb"
-              style={{ opacity: activeCard === "gameOver" ? 1 : 0 }}
+              style={{ opacity: activeCard === "features(a)" ? 1 : 0 }}
             >
     
             </p>
             <p
               className="goBlurb"
-              style={{ opacity: activeCard === "gameOver" ? 1 : 0 }}
+              style={{ opacity: activeCard === "features(a)" ? 1 : 0 }}
             >
         
             </p>
           </section>
+          <section
+            className="featuresB"
+            style={{ zIndex: activeCard === "features(b)" ? 9 : 0,
+            opacity: activeCard === "features(b)" ? 1 : 0 }}
+          >
+            </section>
         </section>
         <section className="projectStack">
           <p className="stackTextNc">Stack</p>
