@@ -158,9 +158,9 @@ export default function NcProject({projectPageNc,setProjectPageNc }) {
           >
             {/* <button className="gotagTop" onClick={() => setActiveCard('gameOver')}>game over</button> */}
             <p
-              className="goBlurb"
+              className="ftblurb"
               style={{ opacity: activeCard === "features(b)" ? 1 : 0 }}
-            ></p>
+            >Enhanced user experience through enabling a user to log in and unlock different features</p>
             <p
               className="goBlurb"
               style={{ opacity: activeCard === "features(b)" ? 1 : 0 }}

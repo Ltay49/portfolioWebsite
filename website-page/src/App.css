@@ -975,8 +975,22 @@ width:113px
     font-size: 100%;
     margin-top: 15px;
     padding-left: 40px;
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
+    .ftblurb{
+      list-style-type: none; /* Remove default bullet */
+      background-image: url('./assets/Pencil.png');
+      background-repeat: no-repeat;
+      background-position: left top;
+      background-size: 8%;
+      margin-top: 5px;
+      text-align: start;
+      font-size: 100%;
+      margin-top: 15px;
+      padding-left: 40px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+  
 
     .hoverVideo1{
       border: solid 1px;
