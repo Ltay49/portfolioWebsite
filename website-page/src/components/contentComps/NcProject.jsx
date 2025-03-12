@@ -4,6 +4,17 @@ import JS from "../../assets/JS.png";
 import GridLayout from "../../assets/GridLayout1.png"
 import IndividualArt from "../../assets/IndividualArt1.png"
 import NCVID from "../../assets/nc_news.mp4";
+import NPM from "../../assets/npm.png"
+import HTML from "../../assets/html.png"
+import CSS from "../../assets/css.png"
+import REACT from "../../assets/React.png"
+import PG from "../../assets/pg.png"
+import SB from "../../assets/supabase.png"
+import SQL from "../../assets/sql.png"
+import NODE from "../../assets/node.png"
+import Netlify from "../../assets/netlify.png";
+
+
 
 
 export default function NcProject({projectPageNc,setProjectPageNc }) {
@@ -190,8 +201,15 @@ export default function NcProject({projectPageNc,setProjectPageNc }) {
         <section className="projectStack">
           <p className="stackTextNc">Stack</p>
           <img className="Expo" src={JS}></img>
-         
-    
+          <img className="Expo" src={NPM}></img>
+          <img className="Expo" src={HTML}></img>
+          <img className="Expo" src={CSS}></img>
+          <img className="Expo" src={REACT}></img>
+          <img className="Expo" src={SB}></img>
+          <img className="Expo" src={NODE}></img>
+          <img className="Expo" src={Netlify}></img>
+          <img className="Expo" src={PG}></img>
+          <img className="Expo" src={SQL}></img>
         </section>
       </section>
     )
