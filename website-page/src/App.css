@@ -864,7 +864,6 @@ width:113px
     contain: content;
   }
   .featurestag{
-    text-align: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
     position: absolute;
@@ -880,7 +879,6 @@ width:113px
     text-align: center;
   }
   .fttagb{
-    text-align: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
     position: absolute;
