@@ -5,8 +5,8 @@ import Netlify from "../../assets/netlify.png";
 import HOWTOPLAY from "../../assets/BarclaysMen.jpeg";
 import GAMEPLAY from "../../assets/BarclaysMen 2.jpeg";
 import WIN from "../../assets/BarclaysMen 3.jpeg";
-import GeneralLayout from "../../assets/GeneralLayout.png"
-import IndividualArt from "../../assets/IndividualArt.png"
+import GridLayout from "../../assets/GridLayout1.png"
+import IndividualArt from "../../assets/IndividualArt1.png"
 import Users from "../../assets/users.png"
 
 
@@ -64,7 +64,7 @@ export default function NcProject({projectPageNc,setProjectPageNc }) {
             }}
             onClick={() => setActiveCard("gameOver")}
           >
-           features
+           features (a)
           </button>
           <img
             className="articlePP"
@@ -76,22 +76,22 @@ export default function NcProject({projectPageNc,setProjectPageNc }) {
             className="usersPP"
             src={Users}
             style={{ zIndex: activeCard === "gameOver" ? 10 : 0,
-            opacity: activeCard === "howToPlay" ? 1 : 0 }}
+            opacity: activeCard === "gameOver" ? 1 : 0 }}
           ></img>
-          <section className="overflow"
+          {/* <section className="overflow"
              style={{ opacity: activeCard === "gamePlay" ? 1 : 0,
-            }}>
+            }}> */}
           <img
             className="generalLayoutPP"
-            src={GeneralLayout}
+            src={GridLayout}
             style={{ zIndex: activeCard === "gamePlay" ? 10 : 0,
                     opacity: activeCard === "gamePlay" ? 1 : 0}}
           ></img>
-            </section>
+            {/* </section> */}
           <section
             className="projectGeneralLayout"
             style={{
-                border: activeCard === "gamePlay" ? "black solid 1px" : "none",
+                // border: activeCard === "gamePlay" ? "black solid 1px" : "none",
                 opacity: activeCard === "gamePlay" ? 1 : 0
               }}
           >

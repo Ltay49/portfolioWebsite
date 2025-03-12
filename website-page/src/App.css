@@ -593,7 +593,9 @@ list-style-type: none; /* Remove default bullet */
 background-image: url('./assets/Football.png');
 background-repeat: no-repeat;
 background-position: left top;
-background-size: 10%;
+background-size: 6%;
+background-position-x: 10px;
+background-position-y: 1px;
 margin-top: 5px;
 text-align: start;
 font-size: 100%;
@@ -815,20 +817,19 @@ width:113px
   text-align: center;
   font-size: 1.5em;
 }
-.generalLayoutPP{
-    /* border: black 2px solid; */
+/* .generalLayoutPP{
     box-shadow: 0px 0px 7px black;
     position: absolute;
-    width: 130%; /* Take up full width of the parent container */
+    width: 52%;
     left:0%;
     top:0%;
     height: 100%;
-    object-fit: cover; /* Fill the container while preserving the aspect ratio */
+    object-fit: cover; 
     z-index: 3;
     border-radius: 10px;
-    overflow-x: auto; /* Enable horizontal scrolling */
+    overflow-x: auto; 
     white-space: nowrap; 
-  }
+  } */
   .gltaga{
     text-align: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -881,8 +882,8 @@ width:113px
     padding-top: 2px;
     text-align: center;
   }
-  .projectGeneralLayout{
-    /* background-color: rgb(243, 225, 225); */
+  /* .projectGeneralLayout{
+    background-color: rgb(243, 225, 225);
     position: absolute;
     border: solid 1px black;
     left:-1.11%;
@@ -893,41 +894,45 @@ width:113px
     contain: content;
     border-top-left-radius: 0px;
     box-shadow: 0px 0px 7px black; 
-    /* overflow-y: scroll; */
-  }
-  .overflow{
+    overflow-y: scroll;
+  } */
+  /* .overflow{
     left:-1%;
-    bottom:24%;
-    width: 100%;
-    height: 53%;
+    top:0%;
+    width: 52%; 
+    height: 91.5%;
     position: relative;
     border-radius: 10px;
     border: solid 1px black;
     box-shadow: 0px 0px 7px black;
-    overflow-x: scroll;
-  }
-  .usersPP, .articlePP{
+  } */
+  .usersPP, .generalLayoutPP, .articlePP{
     /* border-left: lightgreen 2px solid;
     border-bottom: lightgreen 2px solid; */
     box-shadow: 0px 0px 7px black;
     position: absolute;
-    width: 52%; /* Take up full width of the parent container */
-    left:-1%;
+    width: 55%;
+    left:0%;
     top:0%;
-    height: 91.5%;
+    height: 93%;
     object-fit: cover; /* Fill the container while preserving the aspect ratio */
     z-index: 1;
     border-radius: 10px;
   }
-  .projectlayoutB{
+  
+  .projectlayoutB, .projectGeneralLayout{
     opacity: 1;
     position: absolute;
-    border-bottom: black solid 2px;
-    border-top: black solid 2px;
-    border-radius: 10px;
-    left:51%;
+    border-bottom: black solid 1px;
+    border-top: black solid 1px;
+    border-right: black solid 1px;;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    left:52%;
     top:0%;
     height: 92%;
     width: 50%;
     z-index:2;
+    box-shadow: 0px 0px 7px black;
   }
