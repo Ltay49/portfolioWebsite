@@ -912,7 +912,7 @@ width:113px
     box-shadow: 0px 0px 7px black;
     position: absolute;
     width: 55%;
-    left:0%;
+    left:-2%;
     top:0%;
     height: 93%;
     object-fit: cover; /* Fill the container while preserving the aspect ratio */
