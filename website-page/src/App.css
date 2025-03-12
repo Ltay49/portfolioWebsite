@@ -877,6 +877,7 @@ width:113px
     width:25%;
     padding-top: 2px;
     text-align: center;
+    contain: content;
   }
   .fttagb{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -892,6 +893,7 @@ width:113px
     width:25%;
     padding-top: 2px;
     text-align: center;
+    contain: content;
   }
   /* .projectGeneralLayout{
     background-color: rgb(243, 225, 225);
