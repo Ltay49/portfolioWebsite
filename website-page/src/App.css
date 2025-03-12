@@ -911,8 +911,8 @@ width:113px
     border-bottom: lightgreen 2px solid; */
     box-shadow: 0px 0px 7px black;
     position: absolute;
-    width: 55%;
-    left:-2%;
+    width: 56%;
+    left:-1%;
     top:0%;
     height: 93%;
     object-fit: cover; /* Fill the container while preserving the aspect ratio */
