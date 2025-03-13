@@ -171,24 +171,24 @@ export default function NcProject({projectPageNc,setProjectPageNc }) {
             <p
               className="ftblurb"
               style={{ opacity: activeCard === "features(b)" ? 1 : 0 }}
-            >Enhanced user experience through enabling a user to log in which unlock different features</p>
+            >A user can log in unlocking different features</p>
             <p
               className="ftblurb"
               style={{ opacity: activeCard === "features(b)" ? 1 : 0 }}
             >
-            Via the 'useContext' hook the users activity state is shared between components
+            Via 'useContext' hook the users activity state is shared between components
             </p>
             <p
               className="ftblurb"
               style={{ opacity: activeCard === "features(b)" ? 1 : 0 }}
             >
-            The additional features of having an account include; a members area where their pp is displayed, a personal greeting in their area as well as main page, the ability to DELETE and PATCH their comments
+            Features eatures of having an account include; a members area where their pp is displayed, a personal greeting in their area as well as main page, the ability to DELETE and PATCH their comments
             </p>
             <p
               className="ftblurb"
               style={{ opacity: activeCard === "features(b)" ? 1 : 0 }}
             >
-        Additional features include PATCH request to the voting which uses optimistic rendering for instant UX/UI
+            Additional features include PATCH requests to the voting which uses optimistic rendering for instant UX/UI
             </p>
           </section>
           <section

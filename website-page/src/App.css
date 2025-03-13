@@ -967,7 +967,7 @@ width:113px
     background-image: url('./assets/Pencil.png');
     background-repeat: no-repeat;
     background-position: left top;
-    background-size: 10%;
+    background-size: 9%;
     background-position-x: 15px;
     background-position-y: 1px;
     margin-top: 5px;
@@ -982,7 +982,9 @@ width:113px
       background-image: url('./assets/Pencil.png');
       background-repeat: no-repeat;
       background-position: left top;
-      background-size: 8%;
+      background-size: 4.5%;
+      background-position-x: 15px;
+      background-position-y: 1px;
       margin-top: 5px;
       text-align: start;
       font-size: 100%;
