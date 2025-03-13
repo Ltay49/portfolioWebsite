@@ -1036,7 +1036,12 @@ width:113px
       margin-top:0px;
     }
 
-
+    .elBack{
+      opacity: 0.3;
+      height: 200%;
+      position: absolute;
+      width: 100%;
+    }
 
 
     .eltaga{

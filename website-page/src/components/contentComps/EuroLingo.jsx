@@ -1,5 +1,6 @@
 import { useState } from "react";
 import GP from "../../assets/Gamplay.mp4"
+import ELBack from "../../assets/backgroundImage.png"
 
 export default function EuroLingo({setProjectPageEl, projectPageEl}){
 
@@ -20,7 +21,7 @@ export default function EuroLingo({setProjectPageEl, projectPageEl}){
             back to projects
           </button>
         </section>
-        {/* <img className="ncBack" src={NcNewsBack}></img> */}
+        <img className="elBack" src={ELBack}></img>
         <section className="projectText">
           <p className="projpageEl">Euro Lingo</p>
           <p className="blurb">
