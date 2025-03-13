@@ -1,4 +1,5 @@
 import { useState } from "react";
+import GP from "../../assets/Gamplay.mp4"
 
 export default function EuroLingo({setProjectPageEl, projectPageEl}){
 
@@ -36,7 +37,7 @@ export default function EuroLingo({setProjectPageEl, projectPageEl}){
             }}
             onClick={() => setActiveCard("layout(a)")}
           >
-            map
+            game play
           </button>
           <button
             className="eltagb"
@@ -58,7 +59,7 @@ export default function EuroLingo({setProjectPageEl, projectPageEl}){
           video
           </button>
           <button
-            className="fttagb"
+            className="fteltagb"
             style={{
               border: activeCard === "features(b)" ? "black solid 1px" : "none",
             }}
@@ -71,16 +72,16 @@ export default function EuroLingo({setProjectPageEl, projectPageEl}){
             src={IndividualArt}
             style={{ zIndex: activeCard === "layout(b)" ? 10 : 0,
                 opacity: activeCard === "layout(b)" ? 1 : 0  }}
-          ></img> */}
+          ></img>  */}
           {/* <img
             className="generalLayoutPP"
             src={GridLayout}
             style={{ zIndex: activeCard === "layout(a)" ? 10 : 0,
                     opacity: activeCard === "layout(a)" ? 1 : 0}}
-          ></img> */}
-             {/* <video
+          ></img>  */}
+             <video
               className="hoverVideo1"
-              src={NCVID}
+              src={GP}
               autoPlay
               loop
               muted
@@ -88,7 +89,7 @@ export default function EuroLingo({setProjectPageEl, projectPageEl}){
               preload="auto"
               style={{ zIndex: activeCard === "featues(a)" ? 10 : 0,
               opacity: activeCard === "features(a)" ? 1 : 0}}
-            ></video> */}
+            ></video> 
             {/* </section> */}
           <section
             className="projectGeneralLayout"
