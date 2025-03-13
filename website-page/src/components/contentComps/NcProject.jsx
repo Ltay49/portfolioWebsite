@@ -13,6 +13,7 @@ import SB from "../../assets/supabase.png"
 import SQL from "../../assets/sql.png"
 import NODE from "../../assets/node.png"
 import Netlify from "../../assets/netlify.png";
+import RENDER from "../../assets/Render.png"
 
 
 
@@ -40,8 +41,9 @@ export default function NcProject({projectPageNc,setProjectPageNc }) {
         <section className="projectText">
           <p className="projpageNcN">Nc News</p>
           <p className="blurb">
-         This was my first full stack finished project, completed whilst at Northcoders. Over the course of 2 weeks I produced a solid backend complimeted with rigouros testing for all eventualities including 20+ SQL queries and 10+ Restful API's including GET,PATCH,POST and DELETE requests as well as error handling. The front end built in React has dynamin routes and 'useContext' for customised UX as well as exemples of other React Hooks.
+         This was my first full stack finished project, completed whilst at Northcoders. Over the course of 2 weeks I produced a solid backend complimented with rigouros testing for all eventualities. 20+ SQL queries with 10+ Restful API's including GET,PATCH,POST and DELETE requests as well as error handling. The front end built in React has dynaminc routes and 'useContext' for customised UX as well as showcasing other hooks. It is an indipendant blog site.
           </p>
+          <button>Visit</button>
         </section>
         <section className="projectVideo"
         >
@@ -200,8 +202,6 @@ export default function NcProject({projectPageNc,setProjectPageNc }) {
         </section>
         <section className="projectStack">
           <p className="stackTextNc">Stack</p>
-          <img className="Expo" src={JS}></img>
-          <img className="Expo" src={NPM}></img>
           <img className="Expo" src={HTML}></img>
           <img className="Expo" src={CSS}></img>
           <img className="Expo" src={REACT}></img>
@@ -210,6 +210,9 @@ export default function NcProject({projectPageNc,setProjectPageNc }) {
           <img className="Expo" src={Netlify}></img>
           <img className="Expo" src={PG}></img>
           <img className="Expo" src={SQL}></img>
+          <img className="Expo" src={NPM}></img>
+          <img className="Expo" src={JS}></img>
+          <img className="Expo" src={RENDER}></img>
         </section>
       </section>
     )
