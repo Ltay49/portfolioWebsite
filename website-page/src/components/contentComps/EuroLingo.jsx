@@ -1,73 +1,55 @@
 import { useState } from "react";
-import NcNewsBack from "../../assets/NcNewsBack.png"
-import JS from "../../assets/JS.png";
-import GridLayout from "../../assets/GridLayout1.png"
-import IndividualArt from "../../assets/IndividualArt1.png"
-import NCVID from "../../assets/nc_news.mp4";
-import NPM from "../../assets/npm.png"
-import HTML from "../../assets/html.png"
-import CSS from "../../assets/css.png"
-import REACT from "../../assets/React.png"
-import PG from "../../assets/pg.png"
-import SB from "../../assets/supabase.png"
-import SQL from "../../assets/sql.png"
-import NODE from "../../assets/node.png"
-import Netlify from "../../assets/netlify.png";
-import RENDER from "../../assets/Render.png"
-import NCBTN from "../../assets/newsBtn.png"
 
-
-
-export default function NcProject({projectPageNc,setProjectPageNc }) {
+export default function EuroLingo({setProjectPageEl, projectPageEl}){
 
     const [activeCard, setActiveCard] = useState("layout(a)");
 
-    const newPageHandlerNc = () => {
-        setProjectPageNc(true);
+    const newPageHandlerEl = () => {
+        setProjectPageEl(true);
     
-        if (projectPageNc) {
-          setProjectPageNc(false);
+        if (projectPageEl) {
+          setProjectPageEl(false);
         }
       };
 
     return (
         <section className="projectPage" id="projects">
         <section>
-          <button className="backToProjects" onClick={newPageHandlerNc}>
+          <button className="backToProjects" onClick={newPageHandlerEl}>
             back to projects
           </button>
         </section>
-        <img className="ncBack" src={NcNewsBack}></img>
+        {/* <img className="ncBack" src={NcNewsBack}></img> */}
         <section className="projectText">
-          <p className="projpageNcN">Nc News</p>
-          <p className="blurbNcN">
-         My first full stack finished project, completed at Northcoders. Includes a solid backend with rigouros testing for all eventualities. 20+ SQL queries, 10+ Restful API's including GET,PATCH,POST and DELETE requests as well as error handling. The front end built in React has dynaminc routes and 'useContext' for customised UX as well as showcasing other hooks. It is an indipendant blog site.
+          <p className="projpageEl">Euro Lingo</p>
+          <p className="blurb">
+            This project was a lot of fun and required me to learn a new tech stack. The backend is composed of no sql collections, using MongoDB, mongoose,atlas and Typescript. The front end is bound via React and Phaser.js. It is an interactive language learning game aimed for beginers but has the funtionality to increase in diffuclty for more accomplished learners. 
           </p>
             {/* <img className="ncbutton" src={NCBTN}></img> */}
         </section>
         <section className="projectVideo"
         >
           <button
-            className="gltaga"
+            className="eltaga"
             style={{
               border: activeCard === "layout(a)" ? "black solid 1px" : "none",
             }}
             onClick={() => setActiveCard("layout(a)")}
           >
-            main
+            map
           </button>
           <button
-            className="gltagb"
+            className="eltagb"
             style={{
               border: activeCard === "layout(b)" ? "black solid 1px" : "none",
               // opacity: activeCard === "howToPlay" ? "1" : "0.5"
             }}
             onClick={() => setActiveCard("layout(b)")}
           >
-            article
+           house
           </button>
           <button
-            className="featurestag"
+            className="featureelstag"
             style={{
               border: activeCard === "features(a)" ? "black solid 1px" : "none",
             }}
@@ -84,19 +66,19 @@ export default function NcProject({projectPageNc,setProjectPageNc }) {
           >
             features
           </button>
-          <img
+          {/* <img
             className="articlePP"
             src={IndividualArt}
             style={{ zIndex: activeCard === "layout(b)" ? 10 : 0,
                 opacity: activeCard === "layout(b)" ? 1 : 0  }}
-          ></img>
-          <img
+          ></img> */}
+          {/* <img
             className="generalLayoutPP"
             src={GridLayout}
             style={{ zIndex: activeCard === "layout(a)" ? 10 : 0,
                     opacity: activeCard === "layout(a)" ? 1 : 0}}
-          ></img>
-             <video
+          ></img> */}
+             {/* <video
               className="hoverVideo1"
               src={NCVID}
               autoPlay
@@ -106,7 +88,7 @@ export default function NcProject({projectPageNc,setProjectPageNc }) {
               preload="auto"
               style={{ zIndex: activeCard === "featues(a)" ? 10 : 0,
               opacity: activeCard === "features(a)" ? 1 : 0}}
-            ></video>
+            ></video> */}
             {/* </section> */}
           <section
             className="projectGeneralLayout"
@@ -202,7 +184,7 @@ export default function NcProject({projectPageNc,setProjectPageNc }) {
         </section>
         <section className="projectStack">
           <p className="stackTextNc">Stack</p>
-          <img className="Expo" src={HTML}></img>
+          {/* <img className="Expo" src={HTML}></img>
           <img className="Expo" src={CSS}></img>
           <img className="Expo" src={REACT}></img>
           <img className="Expo" src={SB}></img>
@@ -212,9 +194,8 @@ export default function NcProject({projectPageNc,setProjectPageNc }) {
           <img className="Expo" src={RENDER}></img>
           <img className="Expo" src={PG}></img>
           <img className="Expo" src={SQL}></img>
-          <img className="Expo" src={NPM}></img>
+          <img className="Expo" src={NPM}></img> */}
         </section>
       </section>
     )
-
 }

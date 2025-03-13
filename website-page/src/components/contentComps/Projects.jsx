@@ -15,11 +15,13 @@ import Netlify from "../../assets/netlify.png";
 import Railway from "../../assets/Railway.png";
 import ReactNative from "../../assets/ReactNative.png";
 import NcProject from "./NcProject";
+import EuroLingo from "./EuroLingo"
 
 export default function Projects() {
   const [activeCard, setActiveCard] = useState("gamePlay");
   const [projectPageB, setProjectPageB] = useState(false);
   const [projectPageNc, setProjectPageNc] = useState(false);
+  const [projectPageEl, setProjectPageEl] = useState(false);
 
   const newPageHandlerB = () => {
     setProjectPageB(true);
@@ -36,6 +38,15 @@ export default function Projects() {
       setProjectPageNc(false);
     }
   };
+
+  const newPageHandlerEl = () => {
+    setProjectPageEl(true);
+
+    if (projectPageB) {
+      setProjectPageEl(false);
+    }
+  };
+
 
   return (
     <div className="projects" id="projects">
@@ -58,7 +69,7 @@ export default function Projects() {
               stemming from the Barclays era of English top-flight football,
               with an abundance of iconic players to choose from. Each day, a
               new time-stamped player is fetched, ensuring all users have the
-              same player to guess
+              same player to guess.
             </p>
           </section>
           <section className="projectVideo">
@@ -107,9 +118,8 @@ export default function Projects() {
             ></img>
             <section
               className="projectGamePlay"
-              //   src={WIN}
-              //   style={{ zIndex: activeCard === "gamePlay" ? 10 : 0 }}
-            >
+        
+                >
               <li
                 className="gpblurb"
                 style={{ opacity: activeCard === "gamePlay" ? 1 : 0 }}
@@ -164,7 +174,6 @@ export default function Projects() {
               className="projectGameOver"
               style={{ zIndex: activeCard === "gameOver" ? 10 : 0 }}
             >
-              {/* <button className="gotagTop" onClick={() => setActiveCard('gameOver')}>game over</button> */}
               <p
                 className="goBlurb"
                 style={{ opacity: activeCard === "gameOver" ? 1 : 0 }}
@@ -205,7 +214,9 @@ export default function Projects() {
         </section>
       ) : projectPageNc ?(
         <NcProject projectPageNc={projectPageNc} setProjectPageNc={setProjectPageNc}/>
-       ) : (
+       ) : projectPageEl ?(
+        <EuroLingo projectPageEl={projectPageEl} setProjectPageEl={setProjectPageEl}/>
+       ) :(
         <>
           <section className="project1">
             <h4 className="Projtitle" id="NCtext">
@@ -235,9 +246,9 @@ export default function Projects() {
             </h4>
             <p className="Projtag">'europe under one roof'</p>
             <section className="Projbutton">
-              {/* <button className="btnStyle" onClick={newPageHandler}>
+              <button className="btnStyle" onClick={newPageHandlerEl}>
                 learn more here!
-              </button> */}
+              </button>
             </section>
             <video
               className="hoverVideo"
