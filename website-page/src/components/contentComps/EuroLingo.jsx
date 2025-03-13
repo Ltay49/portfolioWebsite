@@ -2,6 +2,17 @@ import { useState } from "react";
 import GP from "../../assets/Gamplay.mp4"
 import ELBack from "../../assets/backgroundImage.png"
 import LOGIN from "../../assets/login.mp4"
+import TS from "../../assets/TS.png";
+import JS from "../../assets/JS.png";
+import MongoDB from "../../assets/MongoDB.png";
+import Mongoose from "../../assets/mongoose.png";
+import Netlify from "../../assets/netlify.png";
+import NPM from "../../assets/npm.png"
+import HTML from "../../assets/html.png"
+import CSS from "../../assets/css.png"
+import REACT from "../../assets/React.png"
+import RENDER from "../../assets/Render.png"
+import PHASER from "../../assets/Phaser.png"
 
 export default function EuroLingo({setProjectPageEl, projectPageEl}){
 
@@ -192,17 +203,18 @@ export default function EuroLingo({setProjectPageEl, projectPageEl}){
         </section>
         <section className="projectStack">
           <p className="stackTextEl">Stack</p>
-          {/* <img className="Expo" src={HTML}></img>
-          <img className="Expo" src={CSS}></img>
-          <img className="Expo" src={REACT}></img>
-          <img className="Expo" src={SB}></img>
-          <img className="Expo" src={NODE}></img>
-          <img className="Expo" src={Netlify}></img>
-          <img className="Expo" src={JS}></img>
-          <img className="Expo" src={RENDER}></img>
-          <img className="Expo" src={PG}></img>
-          <img className="Expo" src={SQL}></img>
-          <img className="Expo" src={NPM}></img> */}
+            <img className="Expo" src={TS}></img>
+            <img className="Expo" src={JS}></img>
+            <img className="Expo" src={PHASER}></img>
+            <img className="Expo" src={Netlify}></img>
+            <img className="Expo" src={HTML}></img>
+            <img className="Expo" src={CSS}></img>
+            <img className="Expo" src={REACT}></img>
+            <img className="Expo" src={NPM}></img>
+            <img className="Expo" src={RENDER}></img>
+            <img className="Expo" src={MongoDB}></img>
+            <img className="Expo" src={Mongoose}></img>
+
         </section>
       </section>
     )
