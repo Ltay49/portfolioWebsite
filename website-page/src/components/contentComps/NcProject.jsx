@@ -118,19 +118,19 @@ export default function NcProject({projectPageNc,setProjectPageNc }) {
               style={{ opacity: activeCard === "layout(a)" ? 1 : 0,
              }}
             >
-             grid style
+            The main page is presented via a flex dislplay and is wrapped, this allows for a responsive layout.
             </li>
             <li
-              className="gpblurb"
+              className="glblurb"
               style={{ opacity: activeCard === "layout(a)" ? 1 : 0 }}
             >
-             
+             The articles are fetched on the initial render and the indiviudal key/pair values are procsiely positioned
             </li>
             <li
-              className="gpblurb"
+              className="glblurb"
               style={{ opacity: activeCard === "layout(a)" ? 1 : 0 }}
             >
-
+            The user has can sort by votes, date created or comment count in a desc or asc order
             </li>
             <li
               className="gpblurb"
@@ -144,22 +144,22 @@ export default function NcProject({projectPageNc,setProjectPageNc }) {
             style={{ opacity: activeCard === "layout(b)" ? 1 : 0 }}
           >
             <li
-              className="howtoblurb"
+              className="glblurb"
               style={{ opacity: activeCard === "layout(b)" ? 1 : 0 }}
             >
-     
+            A single article can also be displayed through a get request via the 'useParams' hook
             </li>
             <li
-              className="howtoblurb"
+               className="glblurb"
               style={{ opacity: activeCard === "layout(b)" ? 1 : 0 }}
             >
-            
+            This layout takes up the full page with margin left and right
             </li>
             <p
-              className="howtoblurb"
+            className="glblurb"
               style={{ opacity: activeCard === "layout(b)" ? 1 : 0 }}
             >
-            
+            Additionally that artcilces comments are shown and via a POST request a comment can be published.
             </p>
           </section>
           <section
