@@ -24,7 +24,7 @@ export default function EuroLingo({setProjectPageEl, projectPageEl}){
         </section>
         <img className="elBack" src={ELBack}></img>
         <section className="projectText">
-          <p className="projpageEl">Euro Lingo</p>
+          <p className="projpageEl">EuroLingo</p>
           <p className="blurb">
             This project was a lot of fun and required me to learn a new tech stack. The backend is composed of no sql collections, using MongoDB, mongoose,atlas and Typescript. The front end is bound via React and Phaser.js. It is an interactive language learning game aimed for beginers but has the funtionality to increase in diffuclty for more accomplished learners. 
           </p>
