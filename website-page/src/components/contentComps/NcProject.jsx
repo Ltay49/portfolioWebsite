@@ -118,19 +118,19 @@ export default function NcProject({projectPageNc,setProjectPageNc }) {
               style={{ opacity: activeCard === "layout(a)" ? 1 : 0,
              }}
             >
-            The main page is presented via a flex dislplay and is wrapped, this allows for a responsive layout.
+            A flex style display for responsivness
             </li>
             <li
               className="glblurb"
               style={{ opacity: activeCard === "layout(a)" ? 1 : 0 }}
             >
-             The articles are fetched on the initial render and the indiviudal key/pair values are procsiely positioned
+            Articles are FETCHED on render and key/pair values are procsiely positioned
             </li>
             <li
               className="glblurb"
               style={{ opacity: activeCard === "layout(a)" ? 1 : 0 }}
             >
-            The user has can sort by votes, date created or comment count in a desc or asc order
+            A user has options to SORT as well as ORDER
             </li>
             <li
               className="gpblurb"
@@ -147,19 +147,19 @@ export default function NcProject({projectPageNc,setProjectPageNc }) {
               className="glblurb"
               style={{ opacity: activeCard === "layout(b)" ? 1 : 0 }}
             >
-            A single article can also be displayed through a get request via the 'useParams' hook
+            Displayed through a GET request via the 'useParams' hook
             </li>
             <li
                className="glblurb"
               style={{ opacity: activeCard === "layout(b)" ? 1 : 0 }}
             >
-            This layout takes up the full page with margin left and right
+            Occupies the full page with margin left and right
             </li>
             <p
             className="glblurb"
               style={{ opacity: activeCard === "layout(b)" ? 1 : 0 }}
             >
-            Additionally that artcilces comments are shown and via a POST request a comment can be published.
+            Additionally the article comments are FETCHED and comments can be POSTed
             </p>
           </section>
           <section
@@ -171,24 +171,24 @@ export default function NcProject({projectPageNc,setProjectPageNc }) {
             <p
               className="ftblurb"
               style={{ opacity: activeCard === "features(b)" ? 1 : 0 }}
-            >Enhanced user experience through enabling a user to log in and unlock different features</p>
+            >Enhanced user experience through enabling a user to log in which unlock different features</p>
             <p
-              className="goBlurb"
+              className="ftblurb"
               style={{ opacity: activeCard === "features(b)" ? 1 : 0 }}
             >
-        
+            Via the 'useContext' hook the users activity state is shared between components
             </p>
             <p
-              className="goBlurb"
+              className="ftblurb"
               style={{ opacity: activeCard === "features(b)" ? 1 : 0 }}
             >
-    
+            The additional features of having an account include; a members area where their pp is displayed, a personal greeting in their area as well as main page, the ability to DELETE and PATCH their comments
             </p>
             <p
-              className="goBlurb"
+              className="ftblurb"
               style={{ opacity: activeCard === "features(b)" ? 1 : 0 }}
             >
-        
+        Additional features include PATCH request to the voting which uses optimistic rendering for instant UX/UI
             </p>
           </section>
           <section
