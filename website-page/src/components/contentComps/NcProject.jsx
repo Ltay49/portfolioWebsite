@@ -41,7 +41,7 @@ export default function NcProject({projectPageNc,setProjectPageNc }) {
         <section className="projectText">
           <p className="projpageNcN">Nc News</p>
           <p className="blurb">
-         This was my first full stack finished project, completed whilst at Northcoders. Over the course of 2 weeks I produced a solid backend complimented with rigouros testing for all eventualities. 20+ SQL queries with 10+ Restful API's including GET,PATCH,POST and DELETE requests as well as error handling. The front end built in React has dynaminc routes and 'useContext' for customised UX as well as showcasing other hooks. It is an indipendant blog site.
+         My first full stack finished project, completed at Northcoders. Includes a solid backend with rigouros testing for all eventualities. 20+ SQL queries, 10+ Restful API's including GET,PATCH,POST and DELETE requests as well as error handling. The front end built in React has dynaminc routes and 'useContext' for customised UX as well as showcasing other hooks. It is an indipendant blog site.
           </p>
           <button>Visit</button>
         </section>
@@ -208,11 +208,11 @@ export default function NcProject({projectPageNc,setProjectPageNc }) {
           <img className="Expo" src={SB}></img>
           <img className="Expo" src={NODE}></img>
           <img className="Expo" src={Netlify}></img>
+          <img className="Expo" src={JS}></img>
+          <img className="Expo" src={RENDER}></img>
           <img className="Expo" src={PG}></img>
           <img className="Expo" src={SQL}></img>
           <img className="Expo" src={NPM}></img>
-          <img className="Expo" src={JS}></img>
-          <img className="Expo" src={RENDER}></img>
         </section>
       </section>
     )
