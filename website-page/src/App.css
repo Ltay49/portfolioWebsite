@@ -577,15 +577,15 @@ border: solid grey 1px;
 .projectGamePlay{
   /* background-color: rgb(243, 225, 225); */
   position: absolute;
-  border-bottom: black solid 2px;
-  border-right: black solid 2px;
+  /* border-bottom: black solid 2px;
+  border-right: black solid 2px; */
   left:45%;
   top:0%;
   height: 89%;
   z-index:3;
   contain: content;
   border-radius: 10px;
-  box-shadow: 0px 0px 7px black; 
+  /* box-shadow: 0px 0px 7px black;  */
   /* overflow-y: scroll; */
 }
 .gpblurb,.howtoblurb, .goBlurb{
@@ -1037,12 +1037,18 @@ width:113px
     }
 
     .elBack{
-      opacity: 0.3;
+      opacity: 0.2;
       height: 200%;
       position: absolute;
       width: 100%;
     }
-
+    .stackTextEl{
+      font-family: 'Press Start 2P', cursive;
+      font-weight: bold;
+      color: black;
+      text-align: center;
+      font-size: 1.5em;
+    }
 
     .eltaga{
       font-family: 'Press Start 2P', cursive;
@@ -1052,11 +1058,11 @@ width:113px
       left:0%;
       border-radius: 5px;
       bottom: 0%;
-      font-size: .7em;
+      font-size: .9em;
       background-color:lightcoral;
       border: none;
       width:25%;
-      padding-top: 5px;
+      padding-top: 2px;
       text-align: center;
       justify-content: center;
       justify-self: center;
@@ -1108,3 +1114,18 @@ width:113px
       padding-top: 2px;
       text-align: center;
     }
+    .ELblurb{
+      list-style-type: none; /* Remove default bullet */
+      background-image: url('./assets/globe2.png');
+      background-repeat: no-repeat;
+      background-position: left top;
+      background-size: 9%;
+      background-position-x: 15px;
+      background-position-y: 3px;
+      margin-top: 5px;
+      text-align: start;
+      font-size: 100%;
+      margin-top: 15px;
+      padding-left: 40px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }

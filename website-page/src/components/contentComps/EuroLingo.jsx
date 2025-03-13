@@ -1,6 +1,7 @@
 import { useState } from "react";
 import GP from "../../assets/Gamplay.mp4"
 import ELBack from "../../assets/backgroundImage.png"
+import LOGIN from "../../assets/login.mp4"
 
 export default function EuroLingo({setProjectPageEl, projectPageEl}){
 
@@ -38,7 +39,7 @@ export default function EuroLingo({setProjectPageEl, projectPageEl}){
             }}
             onClick={() => setActiveCard("layout(a)")}
           >
-            game play
+            cave
           </button>
           <button
             className="eltagb"
@@ -48,7 +49,7 @@ export default function EuroLingo({setProjectPageEl, projectPageEl}){
             }}
             onClick={() => setActiveCard("layout(b)")}
           >
-           house
+         login 
           </button>
           <button
             className="featureelstag"
@@ -57,7 +58,7 @@ export default function EuroLingo({setProjectPageEl, projectPageEl}){
             }}
             onClick={() => setActiveCard("features(a)")}
           >
-          video
+          general
           </button>
           <button
             className="fteltagb"
@@ -68,12 +69,17 @@ export default function EuroLingo({setProjectPageEl, projectPageEl}){
           >
             features
           </button>
-          {/* <img
+          <video
             className="articlePP"
-            src={IndividualArt}
+            src={LOGIN}
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="auto"
             style={{ zIndex: activeCard === "layout(b)" ? 10 : 0,
                 opacity: activeCard === "layout(b)" ? 1 : 0  }}
-          ></img>  */}
+          ></video> 
           {/* <img
             className="generalLayoutPP"
             src={GridLayout}
@@ -100,26 +106,26 @@ export default function EuroLingo({setProjectPageEl, projectPageEl}){
               }}
           >
             <li
-              className="glblurb"
+              className="ELblurb"
               style={{ opacity: activeCard === "layout(a)" ? 1 : 0,
              }}
             >
             A flex style display for responsivness
             </li>
             <li
-              className="glblurb"
+              className="ELblurb"
               style={{ opacity: activeCard === "layout(a)" ? 1 : 0 }}
             >
             Articles are FETCHED on render and key/pair values are procsiely positioned
             </li>
             <li
-              className="glblurb"
+              className="ELblurb"
               style={{ opacity: activeCard === "layout(a)" ? 1 : 0 }}
             >
             A user has options to SORT as well as ORDER
             </li>
             <li
-              className="gpblurb"
+              className="ELblurb"
               style={{ opacity: activeCard === "layout(a)" ? 1 : 0 }}
             >
             
@@ -130,19 +136,19 @@ export default function EuroLingo({setProjectPageEl, projectPageEl}){
             style={{ opacity: activeCard === "layout(b)" ? 1 : 0 }}
           >
             <li
-              className="glblurb"
+              className="ELblurb"
               style={{ opacity: activeCard === "layout(b)" ? 1 : 0 }}
             >
             Displayed through a GET request via the 'useParams' hook
             </li>
             <li
-               className="glblurb"
+               className="ELblurb"
               style={{ opacity: activeCard === "layout(b)" ? 1 : 0 }}
             >
             Occupies the full page with margin left and right
             </li>
             <p
-            className="glblurb"
+            className="ELblurb"
               style={{ opacity: activeCard === "layout(b)" ? 1 : 0 }}
             >
             Additionally the article comments are FETCHED and comments can be POSTed
@@ -185,7 +191,7 @@ export default function EuroLingo({setProjectPageEl, projectPageEl}){
             </section>
         </section>
         <section className="projectStack">
-          <p className="stackTextNc">Stack</p>
+          <p className="stackTextEl">Stack</p>
           {/* <img className="Expo" src={HTML}></img>
           <img className="Expo" src={CSS}></img>
           <img className="Expo" src={REACT}></img>
