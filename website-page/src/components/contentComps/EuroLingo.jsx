@@ -58,7 +58,7 @@ export default function EuroLingo({setProjectPageEl, projectPageEl}){
             }}
             onClick={() => setActiveCard("features(a)")}
           >
-          general
+          game
           </button>
           <button
             className="fteltagb"
@@ -67,7 +67,7 @@ export default function EuroLingo({setProjectPageEl, projectPageEl}){
             }}
             onClick={() => setActiveCard("features(b)")}
           >
-            features
+            more
           </button>
           <video
             className="articlePP"
