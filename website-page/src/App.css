@@ -492,7 +492,7 @@ border: solid grey 1px;
 @media (max-width: 650px) {
   .others, .methods{
     width: 100vw;
-    height:280px;
+    height:200px;
     margin-bottom: 0px;
   }
 }
