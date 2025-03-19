@@ -2,6 +2,7 @@ import { useState } from "react";
 import GP from "../../assets/Gamplay.mp4"
 import ELBack from "../../assets/backgroundImage.png"
 import LOGIN from "../../assets/login.mp4"
+import CAVE from "../../assets/cave.mp4"
 import TS from "../../assets/TS.png";
 import JS from "../../assets/JS.png";
 import MongoDB from "../../assets/MongoDB.png";
@@ -50,7 +51,7 @@ export default function EuroLingo({setProjectPageEl, projectPageEl}){
             }}
             onClick={() => setActiveCard("layout(a)")}
           >
-            cave
+          login
           </button>
           <button
             className="eltagb"
@@ -60,7 +61,7 @@ export default function EuroLingo({setProjectPageEl, projectPageEl}){
             }}
             onClick={() => setActiveCard("layout(b)")}
           >
-         login 
+        game
           </button>
           <button
             className="featureelstag"
@@ -69,7 +70,7 @@ export default function EuroLingo({setProjectPageEl, projectPageEl}){
             }}
             onClick={() => setActiveCard("features(a)")}
           >
-          game
+     more
           </button>
           <button
             className="fteltagb"
@@ -77,6 +78,15 @@ export default function EuroLingo({setProjectPageEl, projectPageEl}){
               border: activeCard === "features(b)" ? "black solid 1px" : "none",
             }}
             onClick={() => setActiveCard("features(b)")}
+          >
+            cave
+          </button>
+          <button
+            className="fteltagc"
+            style={{
+              border: activeCard === "features(c)" ? "black solid 1px" : "none",
+            }}
+            onClick={() => setActiveCard("features(c)")}
           >
             more
           </button>
@@ -88,8 +98,8 @@ export default function EuroLingo({setProjectPageEl, projectPageEl}){
             muted
             playsInline
             preload="auto"
-            style={{ zIndex: activeCard === "layout(b)" ? 10 : 0,
-                opacity: activeCard === "layout(b)" ? 1 : 0  }}
+            style={{ zIndex: activeCard === "layout(a)" ? 10 : 0,
+                opacity: activeCard === "layout(a)" ? 1 : 0  }}
           ></video> 
           {/* <img
             className="generalLayoutPP"
@@ -105,8 +115,8 @@ export default function EuroLingo({setProjectPageEl, projectPageEl}){
               muted
               playsInline
               preload="auto"
-              style={{ zIndex: activeCard === "featues(a)" ? 10 : 0,
-              opacity: activeCard === "features(a)" ? 1 : 0}}
+              style={{ zIndex: activeCard === "layout(b)" ? 10 : 0,
+              opacity: activeCard === "layout(b)" ? 1 : 0}}
             ></video> 
             {/* </section> */}
           <section
@@ -144,52 +154,69 @@ export default function EuroLingo({setProjectPageEl, projectPageEl}){
           </section>
           <section
             className="projectlayoutB"
-            style={{ opacity: activeCard === "layout(b)" ? 1 : 0 }}
+            style={{ opacity: activeCard === "features(b)" ? 1 : 0 }}
           >
-            <li
-              className="ELblurb"
-              style={{ opacity: activeCard === "layout(b)" ? 1 : 0 }}
-            >
-            Displayed through a GET request via the 'useParams' hook
-            </li>
-            <li
-               className="ELblurb"
-              style={{ opacity: activeCard === "layout(b)" ? 1 : 0 }}
-            >
-            Occupies the full page with margin left and right
-            </li>
-            <p
-            className="ELblurb"
-              style={{ opacity: activeCard === "layout(b)" ? 1 : 0 }}
-            >
-            Additionally the article comments are FETCHED and comments can be POSTed
-            </p>
           </section>
           <section
             className="featuresA"
-            style={{ zIndex: activeCard === "features(b)" ? 9 : 0,
-            opacity: activeCard === "features(b)" ? 1 : 0 }}
+            style={{ zIndex: activeCard === "features(a)" ? 9 : 0,
+            opacity: activeCard === "features(a)" ? 1 : 0 }}
           >
             {/* <button className="gotagTop" onClick={() => setActiveCard('gameOver')}>game over</button> */}
             <p
               className="ftblurb"
-              style={{ opacity: activeCard === "features(b)" ? 1 : 0 }}
+              style={{ opacity: activeCard === "features(a)" ? 1 : 0 }}
             >A user can log in unlocking different features</p>
             <p
               className="ftblurb"
-              style={{ opacity: activeCard === "features(b)" ? 1 : 0 }}
+              style={{ opacity: activeCard === "features(a)" ? 1 : 0 }}
             >
             Via 'useContext' hook the users activity state is shared between components
             </p>
             <p
               className="ftblurb"
-              style={{ opacity: activeCard === "features(b)" ? 1 : 0 }}
+              style={{ opacity: activeCard === "features(a)" ? 1 : 0 }}
             >
             Features eatures of having an account include; a members area where their pp is displayed, a personal greeting in their area as well as main page, the ability to DELETE and PATCH their comments
             </p>
             <p
               className="ftblurb"
-              style={{ opacity: activeCard === "features(b)" ? 1 : 0 }}
+              style={{ opacity: activeCard === "features(a)" ? 1 : 0 }}
+            >
+            Additional features include PATCH requests to the voting which uses optimistic rendering for instant UX/UI
+            </p>
+          </section>
+          <section
+            className="featuresB"
+            style={{ zIndex: activeCard === "features(a)" ? 9 : 0,
+            opacity: activeCard === "features(a)" ? 1 : 0 }}
+          >
+            </section>
+            <section
+            className="featuresC"
+            style={{ zIndex: activeCard === "features(c)" ? 9 : 0,
+            opacity: activeCard === "features(c)" ? 1 : 0 }}
+          >
+            {/* <button className="gotagTop" onClick={() => setActiveCard('gameOver')}>game over</button> */}
+            <p
+              className="ftblurb"
+              style={{ opacity: activeCard === "features(c)" ? 1 : 0 }}
+            >A user can log in unlocking different features</p>
+            <p
+              className="ftblurb"
+              style={{ opacity: activeCard === "features(c)" ? 1 : 0 }}
+            >
+            Via 'useContext' hook the users activity state is shared between components
+            </p>
+            <p
+              className="ftblurb"
+              style={{ opacity: activeCard === "features(c)" ? 1 : 0 }}
+            >
+            Features eatures of having an account include; a members area where their pp is displayed, a personal greeting in their area as well as main page, the ability to DELETE and PATCH their comments
+            </p>
+            <p
+              className="ftblurb"
+              style={{ opacity: activeCard === "features(c)" ? 1 : 0 }}
             >
             Additional features include PATCH requests to the voting which uses optimistic rendering for instant UX/UI
             </p>
@@ -199,6 +226,17 @@ export default function EuroLingo({setProjectPageEl, projectPageEl}){
             style={{ zIndex: activeCard === "features(b)" ? 9 : 0,
             opacity: activeCard === "features(b)" ? 1 : 0 }}
           >
+               <video
+              className="hoverVideo1"
+              src={CAVE}
+              autoPlay
+              loop
+              muted
+              playsInline
+              preload="auto"
+              style={{ zIndex: activeCard === "features(b)" ? 10 : 0,
+              opacity: activeCard === "features(b)" ? 1 : 0}}
+            ></video> 
             </section>
         </section>
         <section className="projectStack">

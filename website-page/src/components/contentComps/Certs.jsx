@@ -14,7 +14,12 @@ import RENDER from "../../assets/Render.png"
 import Netlify from "../../assets/netlify.png";
 import Railway from "../../assets/Railway.png";
 import SB from "../../assets/supabase.png"
-
+import TS from "../../assets/TS.png";
+import JS from "../../assets/JS.png";
+import NPM from "../../assets/npm.png"
+import NODE from "../../assets/node.png"
+import JEST from "../../assets/jest.png"
+import Super from "../../assets/supertest.png"
 
 export default function Certs() {
   return (
@@ -47,10 +52,25 @@ export default function Certs() {
             <img className="StackB" src={Mongoose}></img>
            </section>
         <section className="other"><p>Hosting/Deployment</p>
-            <img className="StackB" src={SB}></img>
-            <img className="StackB" src={RENDER}></img>
-            <img className="StackB" src={Railway}></img>
-            <img className="StackB" src={Netlify}></img>
+            <img className="StackO" src={Railway}></img>
+            <img className="StackO" src={Netlify}></img>
+            <img className="StackO" src={SB}></img>
+            <img className="StackO" src={RENDER}></img>
+        </section>
+        <section className="others"><p>Languages/Other</p>
+            <img className="StackL" src={TS}></img>
+            <img className="StackL" src={JS}></img>
+            <img className="StackL" src={NPM}></img>
+            <img className="StackL" src={NODE}></img>
+            <img className="StackL" src={JEST}></img>
+            <img className="StackL" src={Super}></img>
+        </section>
+        <section className="others"><p>Methods</p>
+            {/* <img className="StackO" src={TS}></img> */}
+            <p>Pair progamming</p>
+            <p>TDD</p>
+            <img className="StackO" src={SB}></img>
+            <img className="StackO" src={RENDER}></img>
         </section>
         {/* <section className="host"></section>
         <section className="methods"></section> */}
