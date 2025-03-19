@@ -65,7 +65,7 @@ export default function Certs() {
             <img className="StackL" src={JEST}></img>
             <img className="StackL" src={Super}></img>
         </section>
-        <section className="others"><p>Methods</p>
+        <section className="methods"><p>Methods</p>
             {/* <img className="StackO" src={TS}></img> */}
             <p>Pair progamming</p>
             <p>TDD</p>

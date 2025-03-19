@@ -454,6 +454,19 @@ border: solid grey 1px;
   vertical-align: top; 
   position: relative; 
 }
+.methods{
+  /* box-shadow: 0px 0px 7px green; */
+  margin: 5px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  width: 50vw; 
+  min-width: 250px;
+  height: 350px; 
+  display: inline-block;
+  text-align: center;
+  vertical-align: top; 
+  position: relative; 
+}
 
 @media (max-width: 1400px) {
   .other, .back, .front{
@@ -471,6 +484,13 @@ border: solid grey 1px;
 }
 @media (max-width: 650px) {
   .other, .back, .front{
+    width: 100vw;
+    height:280px;
+    margin-bottom: 0px;
+  }
+}
+@media (max-width: 650px) {
+  .others, .methods{
     width: 100vw;
     height:280px;
     margin-bottom: 0px;
