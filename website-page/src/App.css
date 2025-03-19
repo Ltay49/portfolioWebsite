@@ -489,6 +489,12 @@ border: solid grey 1px;
     margin-bottom: 0px;
   }
 }
+
+@media (max-width: 650px) {
+  .other, .back, .others{
+    margin-top: 20px;
+  }
+}
 @media (max-width: 650px) {
   .others, .methods{
     width: 100vw;
