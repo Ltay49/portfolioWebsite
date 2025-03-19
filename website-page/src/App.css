@@ -492,7 +492,7 @@ border: solid grey 1px;
 
 @media (max-width: 650px) {
   .other, .back, .others{
-    margin-top: 20px;
+    margin-top: 30px;
   }
 }
 @media (max-width: 650px) {
