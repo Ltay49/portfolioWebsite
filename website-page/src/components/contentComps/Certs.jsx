@@ -65,12 +65,25 @@ export default function Certs() {
             <img className="StackL" src={JEST}></img>
             <img className="StackL" src={Super}></img>
         </section>
-        <section className="methods"><p className="stackTitle">Methods</p>
-            <p className="methodtext">Paired progamming</p>
-            <p>TDD</p>
-            <p>Agile</p>
-            <p>MWC</p>
-            <p>SCRUM</p>
+        {/* <p className="stackTitle">Methods</p> */}
+        <section className="methods">
+        <p className="stackTitleM">Methods</p>
+            <div className="methodtext">
+                <p id="text1">Paired progamming
+                </p></div>
+            <div className="methodtext1">
+                <p id="text"> TDD</p>
+            </div>
+            <div className="methodtext1">
+                <p id="text"> Agile</p>
+            </div>
+            <div className="methodtext1">
+            <p id="text">MWC </p>
+            </div>
+            <div className="methodtext1">
+            <p id="text">SCRUM
+            </p>
+            </div>
         </section>
     </section>
   );

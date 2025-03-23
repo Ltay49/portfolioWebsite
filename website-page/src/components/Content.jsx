@@ -12,9 +12,9 @@ export default function Content() {
         </section>
         <Projects />
       </section>
-      <section className="certsAndStacksContainer" id="certification">
-        <h3>Certs & Stacks</h3>
-      </section>
+      {/* <section className="certsAndStacksContainer" id="certification"> */}
+        <h3 id="certsTitle">Certs & Stacks</h3>
+      {/* </section> */}
       <Certs />
       <section className="aboutMeContainer" id="aboutMe">
         <h3>About Me</h3>
