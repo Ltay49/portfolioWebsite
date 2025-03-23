@@ -171,13 +171,13 @@ export default function EuroLingo({setProjectPageEl, projectPageEl}){
               className="ELblurb1"
               style={{ opacity: activeCard === "features(a)" ? 1 : 0 }}
             >
-           Api call is made upon entry to a countries house, FETCHING the words within the db, these are randomised to ensure a new learning experience for each level.
+           Api call made on house entry, FETCHING words from the DB, then randomised to ensure a new learning experience for each level.
             </p>
             <p
               className="ELblurb1"
               style={{ opacity: activeCard === "features(a)" ? 1 : 0 }}
             >
-            Customised interactions which relfect the usersname and progress, guidng the user through the game play.
+            Customised interactions which relfecting usersname and progress, guidng the user through the game play.
             </p>
             <p
               className="ELblurb1"
