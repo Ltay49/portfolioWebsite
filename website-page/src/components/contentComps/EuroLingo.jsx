@@ -177,13 +177,13 @@ export default function EuroLingo({setProjectPageEl, projectPageEl}){
               className="ELblurb1"
               style={{ opacity: activeCard === "features(a)" ? 1 : 0 }}
             >
-            Customised interactions which relfecting usersname and progress, guidng the user through the game play.
+            Customised interactions relfecting usersname and progress, guidng the user through the game play.
             </p>
             <p
               className="ELblurb1"
               style={{ opacity: activeCard === "features(a)" ? 1 : 0 }}
             >
-          POST requests to the users collection, tracking progression, this is reflected in the progress bar top left of the main map.
+          POST requests to the users collection, tracking progression, reflected in the main map progress bar.
             </p>
           </section>
           <section
@@ -214,12 +214,12 @@ export default function EuroLingo({setProjectPageEl, projectPageEl}){
             >
            API GET request for chosen langauge, randomisiation of the words for a unique learning experience
             </p>
-            <p
+            {/* <p
               className="ELblurb1"
               style={{ opacity: activeCard === "features(c)" ? 1 : 0 }}
             >
             Additional features include PATCH requests to the voting which uses optimistic rendering for instant UX/UI
-            </p>
+            </p> */}
           </section>
           <section
             className="featuresB"
