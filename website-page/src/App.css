@@ -138,6 +138,11 @@ header {
 padding-bottom: 120px;
    }
  }
+ @media (max-width: 400px) {
+  .certsAndStacksContainer {
+padding-bottom: 120px;
+   }
+ }
 .projects{
   width: 100vw;
   border-top: solid 2px;
