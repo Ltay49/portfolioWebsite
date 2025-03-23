@@ -36,7 +36,7 @@ export default function Certs() {
         <img className="certPic" src={CERT}></img>
       </section> */}
         <section className="front">
-        <p>Front-End</p>
+        <p className="stackTitle">Front-End</p>
             <img className="Stack" src={PHASER}></img>
             <img className="Stack" src={HTML}></img>
             <img className="Stack" src={CSS}></img>
@@ -45,19 +45,19 @@ export default function Certs() {
             <img className="Stack" src={Expo}></img>
             <img className="Stack" src={ExpoGo}></img>
         </section>
-        <section className="back"><p>Back-End</p>
+        <section className="back"><p className="stackTitle">Back-End</p>
             <img className="StackB" src={PG}></img>
             <img className="StackB" src={MongoDB}></img>
             <img className="StackB" src={SQL}></img>
             <img className="StackB" src={Mongoose}></img>
            </section>
-        <section className="other"><p>Hosting/Deployment</p>
+        <section className="other"><p className="stackTitle">Hosting/Deployment</p>
             <img className="StackO" src={Railway}></img>
             <img className="StackO" src={Netlify}></img>
             <img className="StackO" src={SB}></img>
             <img className="StackO" src={RENDER}></img>
         </section>
-        <section className="others"><p>Languages/Other</p>
+        <section className="others"><p className="stackTitle">Languages/Other</p>
             <img className="StackL" src={TS}></img>
             <img className="StackL" src={JS}></img>
             <img className="StackL" src={NPM}></img>
@@ -65,15 +65,13 @@ export default function Certs() {
             <img className="StackL" src={JEST}></img>
             <img className="StackL" src={Super}></img>
         </section>
-        <section className="methods"><p>Methods</p>
-            {/* <img className="StackO" src={TS}></img> */}
-            <p>Pair progamming</p>
+        <section className="methods"><p className="stackTitle">Methods</p>
+            <p className="methodtext">Paired progamming</p>
             <p>TDD</p>
-            <img className="StackO" src={SB}></img>
-            <img className="StackO" src={RENDER}></img>
+            <p>Agile</p>
+            <p>MWC</p>
+            <p>SCRUM</p>
         </section>
-        {/* <section className="host"></section>
-        <section className="methods"></section> */}
     </section>
   );
 }

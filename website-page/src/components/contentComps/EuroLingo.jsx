@@ -131,19 +131,19 @@ export default function EuroLingo({setProjectPageEl, projectPageEl}){
               style={{ opacity: activeCard === "layout(a)" ? 1 : 0,
              }}
             >
-            A flex style display for responsivness
+           Checks log in details, both username and password via FETCHING user details.
             </li>
             <li
               className="ELblurb"
               style={{ opacity: activeCard === "layout(a)" ? 1 : 0 }}
             >
-            Articles are FETCHED on render and key/pair values are procsiely positioned
+            Prompt to ceate an account which will result in POST request to add a user to the game.
             </li>
             <li
               className="ELblurb"
               style={{ opacity: activeCard === "layout(a)" ? 1 : 0 }}
             >
-            A user has options to SORT as well as ORDER
+            Logging in with a user account allows for a smooth method of saving user game play.
             </li>
             <li
               className="ELblurb"
@@ -166,24 +166,24 @@ export default function EuroLingo({setProjectPageEl, projectPageEl}){
             <p
               className="ftblurb"
               style={{ opacity: activeCard === "features(a)" ? 1 : 0 }}
-            >A user can log in unlocking different features</p>
+            >PhaserJs features incluse depth, gravity, collide, setDraggable and physics to create the feel of the game. </p>
             <p
               className="ftblurb"
               style={{ opacity: activeCard === "features(a)" ? 1 : 0 }}
             >
-            Via 'useContext' hook the users activity state is shared between components
+           Api call is made upon entry to a countries house, FETCHING the words within the db, these are randomised to ensure a new learning experience for each level.
             </p>
             <p
               className="ftblurb"
               style={{ opacity: activeCard === "features(a)" ? 1 : 0 }}
             >
-            Features eatures of having an account include; a members area where their pp is displayed, a personal greeting in their area as well as main page, the ability to DELETE and PATCH their comments
+            Customised interactions which relfect the usersname and progress, guidng the user through the game play.
             </p>
             <p
               className="ftblurb"
               style={{ opacity: activeCard === "features(a)" ? 1 : 0 }}
             >
-            Additional features include PATCH requests to the voting which uses optimistic rendering for instant UX/UI
+          POST requests to the users collection, tracking progression, this is reflected in the progress bar top left of the main map.
             </p>
           </section>
           <section
@@ -201,18 +201,18 @@ export default function EuroLingo({setProjectPageEl, projectPageEl}){
             <p
               className="ftblurb"
               style={{ opacity: activeCard === "features(c)" ? 1 : 0 }}
-            >A user can log in unlocking different features</p>
+            >The game provides extra game play for advanced learners, available upon completion after all the house rounds</p>
             <p
               className="ftblurb"
               style={{ opacity: activeCard === "features(c)" ? 1 : 0 }}
             >
-            Via 'useContext' hook the users activity state is shared between components
+            A user can choose to futher test the language off all the choice after acomplishing the foundations in the house scences.
             </p>
             <p
               className="ftblurb"
               style={{ opacity: activeCard === "features(c)" ? 1 : 0 }}
             >
-            Features eatures of having an account include; a members area where their pp is displayed, a personal greeting in their area as well as main page, the ability to DELETE and PATCH their comments
+           API GET request for chosen langauge, randomisiation of the words for a unique learning experience
             </p>
             <p
               className="ftblurb"

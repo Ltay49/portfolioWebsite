@@ -402,7 +402,7 @@ border: solid grey 1px;
   /* border: solid 2px; */
   /* box-shadow: 0px 0px 7px blue; */
   margin: 5px;
-  border-right: solid 3px black;
+  border-right: 3px solid rgb(40, 39, 39);
   border-radius: 0px;
   box-sizing: border-box;
   width: 32vw; 
@@ -417,7 +417,7 @@ border: solid grey 1px;
   /* box-shadow: 0px 0px 7px red; */
   margin: 5px;
   /* border-radius: 10px; */
-  border-right: 3px solid grey;
+  border-right: 3px solid rgb(40, 39, 39);
   box-sizing: border-box;
   width: 32vw; 
   min-width: 250px;
@@ -463,11 +463,29 @@ border: solid grey 1px;
   min-width: 250px;
   height: 350px; 
   display: inline-block;
-  text-align: center;
   vertical-align: top; 
   position: relative; 
 }
 
+.stackTitle{
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  font-weight: bold;
+  font-size: 1.15em;
+  color: rgb(40, 39, 39);
+  text-align: center;
+}
+
+.methodtext{
+border-radius: 50%;
+border: 1px solid black;
+width: 120px;
+padding-top: 40px;
+text-align: center;
+justify-content: center;
+height: 80px;
+
+}
 @media (max-width: 1400px) {
   .other, .back, .front{
     width: 45vw;
