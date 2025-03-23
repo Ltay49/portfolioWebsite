@@ -164,23 +164,23 @@ export default function EuroLingo({setProjectPageEl, projectPageEl}){
           >
             {/* <button className="gotagTop" onClick={() => setActiveCard('gameOver')}>game over</button> */}
             <p
-              className="ftblurb"
+              className="ELblurb1"
               style={{ opacity: activeCard === "features(a)" ? 1 : 0 }}
             >PhaserJs features incluse depth, gravity, collide, setDraggable and physics to create the feel of the game. </p>
             <p
-              className="ftblurb"
+              className="ELblurb1"
               style={{ opacity: activeCard === "features(a)" ? 1 : 0 }}
             >
            Api call is made upon entry to a countries house, FETCHING the words within the db, these are randomised to ensure a new learning experience for each level.
             </p>
             <p
-              className="ftblurb"
+              className="ELblurb1"
               style={{ opacity: activeCard === "features(a)" ? 1 : 0 }}
             >
             Customised interactions which relfect the usersname and progress, guidng the user through the game play.
             </p>
             <p
-              className="ftblurb"
+              className="ELblurb1"
               style={{ opacity: activeCard === "features(a)" ? 1 : 0 }}
             >
           POST requests to the users collection, tracking progression, this is reflected in the progress bar top left of the main map.
@@ -193,29 +193,29 @@ export default function EuroLingo({setProjectPageEl, projectPageEl}){
           >
             </section>
             <section
-            className="featuresC"
+            className="ELA"
             style={{ zIndex: activeCard === "features(c)" ? 9 : 0,
             opacity: activeCard === "features(c)" ? 1 : 0 }}
           >
             {/* <button className="gotagTop" onClick={() => setActiveCard('gameOver')}>game over</button> */}
             <p
-              className="ftblurb"
+              className="ELblurb1"
               style={{ opacity: activeCard === "features(c)" ? 1 : 0 }}
             >The game provides extra game play for advanced learners, available upon completion after all the house rounds</p>
             <p
-              className="ftblurb"
+              className="ELblurb1"
               style={{ opacity: activeCard === "features(c)" ? 1 : 0 }}
             >
             A user can choose to futher test the language off all the choice after acomplishing the foundations in the house scences.
             </p>
             <p
-              className="ftblurb"
+              className="ELblurb1"
               style={{ opacity: activeCard === "features(c)" ? 1 : 0 }}
             >
            API GET request for chosen langauge, randomisiation of the words for a unique learning experience
             </p>
             <p
-              className="ftblurb"
+              className="ELblurb1"
               style={{ opacity: activeCard === "features(c)" ? 1 : 0 }}
             >
             Additional features include PATCH requests to the voting which uses optimistic rendering for instant UX/UI
