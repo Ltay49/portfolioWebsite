@@ -214,12 +214,12 @@ export default function EuroLingo({setProjectPageEl, projectPageEl}){
             >
            API GET request for chosen langauge, randomisiation of the words for a unique learning experience
             </p>
-            {/* <p
+            <p
               className="ELblurb1"
               style={{ opacity: activeCard === "features(c)" ? 1 : 0 }}
             >
-            Additional features include PATCH requests to the voting which uses optimistic rendering for instant UX/UI
-            </p> */}
+           setMask, graphics, destroy used for effects.
+            </p>
           </section>
           <section
             className="featuresB"
