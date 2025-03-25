@@ -15,6 +15,7 @@ html, body {
 
 body {
   /* background-color:beige; */
+  /* background: radial-gradient(circle, #ffffff, #f0f7f9); */
   display: flex;  
   color: black;        /* Make body a flex container */
   flex-direction: column;
@@ -124,6 +125,7 @@ header {
   overflow: hidden;
 }
 .certsAndStacksContainer{
+  /* background: radial-gradient(circle, #eef1f2, #a8e1eb); */
   border-top: solid 2px black;
   flex: 1;
   justify-content: center;
@@ -132,7 +134,16 @@ header {
   flex-wrap: wrap;
   overflow: hidden;
 }
-
+@media (max-width: 900px) {
+  .certsAndStacksContainer {
+padding-bottom: 120px;
+   }
+ }
+@media (max-width: 700px) {
+  .certsAndStacksContainer {
+padding-bottom: 120px;
+   }
+ }
 @media (max-width: 650px) {
   .certsAndStacksContainer {
 padding-bottom: 120px;
@@ -140,7 +151,7 @@ padding-bottom: 120px;
  }
  @media (max-width: 400px) {
   .certsAndStacksContainer {
-padding-bottom: 120px;
+padding-bottom: 180px;
    }
  }
 .projects{
