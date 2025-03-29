@@ -14,8 +14,7 @@ html, body {
 }
 
 body {
-  /* background-color:beige; */
-  /* background: radial-gradient(circle, #ffffff, #f0f7f9); */
+  /* background-color:beige; */  
   display: flex;  
   color: black;        /* Make body a flex container */
   flex-direction: column;
@@ -1429,23 +1428,34 @@ width:113px
        position: relative;
       }
 
-      .imgPlaceholder{
-        border: solid black;
+      .imagePlaceholder{
+    box-shadow: 1px 1px 6px black;
         border-radius: 50%;
-        height:300px;
-        width: 300px;
+        height: 400px;
+        width: 25%;
         position: relative;
         margin: 5px;
+        overflow: hidden;
+        object-fit: fill;
+      }
+      .meImg{
+        position: relative;
+        right: 10%;
+        height: 140%;
+        top:-10%;
+        border-radius: 50%;
+        /* object-fit: fill; */
       }
       .textPlaceholder{
-        /* border: solid black; */
+        border-radius: 15px;
+        box-shadow: 1px 1px 6px black;
         height:400px;
-        width: 45%;
+        width: 60%;
         position: relative;
         margin: 5px;
         object-fit: fill;
         overflow: hidden;
-
+        background-color: rgb(249, 238, 218)
       }
       .EveImg {
         position: absolute;
@@ -1459,23 +1469,23 @@ width:113px
     }
     .NcImg {
       position: absolute;
-      height: 100%;
-      top: 0;
+      height: 170%;
+      top: -40%;
       left:0;
       width:100%;
       border-radius: 15px;
-      mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, .2) 70%);
-      -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, .2) 70%);
+      mask-image: linear-gradient(to left, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, .2) 0%);
+      -webkit-mask-image: linear-gradient(to left, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, .2) 0%);
   }
 
   .JobBlulrb{
     /* border: 1px solid black; */
-    width: 50%;
+    width: 98%;
     height: 99%;
     text-align: left;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding-left: 5px;
-    font-size: 1.1em;
+  margin: 15px;
+    font-size: 1.3em;
     color: darkblue;
   }
   .NcBlulrb{
