@@ -69,18 +69,18 @@ export default function Certs() {
         <section className="methods">
         <p className="stackTitleM">Methods</p>
             <div className="methodtext">
-                <p id="text1">Paired progamming
+                <p id="text">Paired progamming
                 </p></div>
-            <div className="methodtext1">
+            <div className="methodtext">
                 <p id="text"> TDD</p>
             </div>
-            <div className="methodtext1">
+            <div className="methodtext">
                 <p id="text"> Agile</p>
             </div>
-            <div className="methodtext1">
+            <div className="methodtext">
             <p id="text">MWC </p>
             </div>
-            <div className="methodtext1">
+            <div className="methodtext">
             <p id="text">SCRUM
             </p>
             </div>
