@@ -1492,8 +1492,9 @@ width:113px
   }
   @media (max-width: 400px) { .JobBlulrb1, .JobBlulrb{
     padding: 10px;
+    font-size: 1.2em;
   }
-  }
+}
   .nextSlide{
     position: absolute;
     top:80%;
@@ -1527,10 +1528,15 @@ width:113px
   width:7%;
   height: 45%;
 margin-top: 30px;
-
 }
 }
 
+@media (max-width: 400px) { .nextSlideBtn1, .nextSlideBtn{
+  width:10%;
+  height: 45%;
+margin-top: 30px;
+}
+}
   @media (max-width: 1200px) { .textPlaceholder{
     width:80%
   }
