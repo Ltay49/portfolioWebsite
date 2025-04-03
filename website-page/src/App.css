@@ -1611,16 +1611,20 @@ text-align: end;
 }
 }
 @media (max-width: 800px) { .sendbtn{
-  margin-left: 440px;
+  margin-left: 420px;
 }
 }
 
 @media (max-width: 400px) { .sendbtn{
-  margin-left: 300px;
+  margin-left: 250px;
 }
 }
 @media (max-width: 800px) { .nameBox, .emailAdd{
   font-size: 1em;
-  margin-right: 20px;
+}
+}
+
+@media (max-width: 700px) { .nameBox, .emailAdd{
+  margin-left: -12px;
 }
 }
