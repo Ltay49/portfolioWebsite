@@ -1546,7 +1546,6 @@ width: 600px
 .nameBox{
   border-radius: 15px;
   width: 100%;
-  border: black solid 1px;
   height: 50px;
   margin-bottom: 10px;
 }
@@ -1562,20 +1561,20 @@ width: 600px
 }
 
 .nameText{
-width: 25%;
+width: 28%;
 text-align: end;
   /* border: 1px solid ; */
 }
 .emailText{
-  width: 25%;
+  width: 28%;
   text-align: end;
     /* border: 1px solid ; */
   }
 .enterName{
   position:relative;
   background-color: #0063A1;
-  width: 70%;
-  left:14%;
+  width: 72%;
+  left:16%;
   top:-50px;
   height: 80%;
   color: white;
