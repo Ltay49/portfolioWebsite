@@ -1454,6 +1454,10 @@ width:113px
         height: 350px;
         width: 60%;
       }}
+      @media (max-width: 400px) { .imagePlaceholder{
+        height: 350px;
+        width: 75%;
+      }}
    
       .textPlaceholder{
         border-radius: 15px;
@@ -1492,7 +1496,7 @@ width:113px
   }
   @media (max-width: 400px) { .JobBlulrb1, .JobBlulrb{
     padding: 10px;
-    font-size: 1.2em;
+    font-size: 1.4em;
   }
 }
   .nextSlide{
