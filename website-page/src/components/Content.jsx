@@ -1,6 +1,6 @@
 import Projects from "./contentComps/Projects";
 import Certs from "./contentComps/Certs";
-// import Contact from "./Contact";
+import Contact from "./contentComps/Contact";
 import AboutMe from "./contentComps/AboutMe";
 
 export default function Content() {
@@ -22,8 +22,9 @@ export default function Content() {
       <AboutMe />
       <section className="getInTouchContainer">
       <section className="projectTitle">
-      <h3>GET IN TOUCH!</h3>
+      <h3 id="contactMe">GET IN TOUCH!</h3>
       </section>
+      <Contact />
       </section>
     </div>
   );
