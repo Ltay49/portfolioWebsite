@@ -1490,6 +1490,10 @@ width:113px
     padding: 20px;
   }
   }
+  @media (max-width: 400px) { .JobBlulrb1, .JobBlulrb{
+    padding: 10px;
+  }
+  }
   .nextSlide{
     position: absolute;
     top:80%;
