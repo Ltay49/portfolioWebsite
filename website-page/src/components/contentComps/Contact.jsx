@@ -21,6 +21,8 @@ export default function Contact (){
         <textarea className="emailAdd">
              
             </textarea>
+
+            <button className="sendbtn">Send</button>
     </div>
    )
 }
