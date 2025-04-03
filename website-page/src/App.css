@@ -1581,9 +1581,17 @@ text-align: end;
   /* border: 1px solid ; */
 }
 .emailText{
-  width: 28%;
+  width: 30%;
   text-align: end;
+  /* padding-right: 20px; */
+  margin-left: -10px;
     /* border: 1px solid ; */
+  }
+
+  @media (max-width: 400px) { .emailText{
+ justify-content: center;
+ text-align: center;
+  }
   }
 .enterName{
   position:relative;
