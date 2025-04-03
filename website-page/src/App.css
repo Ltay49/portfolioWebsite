@@ -1450,6 +1450,11 @@ width:113px
         border-radius: 50%;
         /* object-fit: fill; */
       }
+      @media (max-width: 800px) { .imagePlaceholder{
+        height: 350px;
+        width: 60%;
+      }}
+   
       .textPlaceholder{
         border-radius: 15px;
         box-shadow: 1px 1px 6px black;
@@ -1466,7 +1471,7 @@ width:113px
     height: 99%;
     text-align: left;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
- padding: 50px;
+    padding: 50px;
     font-size: 1.6em;
     color:#0063A1;
 
@@ -1481,7 +1486,10 @@ width:113px
     font-size: 1.6em;
     color:#0063A1;
   }
-
+  @media (max-width: 600px) { .JobBlulrb1, .JobBlulrb{
+    padding: 20px;
+  }
+  }
   .nextSlide{
     position: absolute;
     top:80%;
@@ -1511,10 +1519,23 @@ width:113px
  box-shadow: 1px 1px 5px rgb(4, 19, 66);
 }
 
+@media (max-width: 600px) { .nextSlideBtn1, .nextSlideBtn{
+  width:7%;
+  height: 45%;
+margin-top: 30px;
+
+}
+}
+
   @media (max-width: 1200px) { .textPlaceholder{
     width:80%
   }
   }
+  @media (max-width: 600px) { .textPlaceholder{
+    width:100%
+  }
+  }
+
 
 .emailBox{
 /* border: black solid 1px; */
@@ -1525,7 +1546,7 @@ width: 600px
 .nameBox{
   border-radius: 15px;
   width: 100%;
-  /* border: black solid 1px; */
+  border: black solid 1px;
   height: 50px;
   margin-bottom: 10px;
 }
@@ -1555,7 +1576,7 @@ text-align: end;
   background-color: #0063A1;
   width: 70%;
   left:14%;
-  top:-40px;
+  top:-50px;
   height: 80%;
   color: white;
   font-size: 1.2em;
@@ -1570,4 +1591,16 @@ text-align: end;
   color: white;
   font-size: 1.4em;
   margin-left: 500px;
+}
+@media (max-width: 1200px) { .emailBox{
+  width:90%
+}
+}
+@media (max-width: 800px) { .sendbtn{
+  margin-left: 440px;
+}
+}
+@media (max-width: 800px) { .nameBox, .emailAdd{
+  font-size: 1em;
+}
 }
