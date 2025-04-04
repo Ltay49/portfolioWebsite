@@ -50,18 +50,18 @@ export default function Contact() {
             className="enterName"
             type="text"
             name="name"
-            placeholder="name here..."
+            placeholder="your name here..."
             value={formData.name}
             onChange={handleChange}
           />
           <div className="emailText">
-            <p>Email Address: </p>
+            <p>Email: </p>
           </div>
           <input
             className="enterName"
             type="email"
             name="email"
-            placeholder="email here..."
+            placeholder="your email here..."
             value={formData.email}
             onChange={handleChange}
           />
