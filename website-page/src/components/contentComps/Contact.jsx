@@ -50,7 +50,7 @@ export default function Contact() {
             className="enterName"
             type="text"
             name="name"
-            placeholder="your name here..."
+            placeholder="Your name here..."
             value={formData.name}
             onChange={handleChange}
           />
@@ -61,7 +61,7 @@ export default function Contact() {
             className="enterName"
             type="email"
             name="email"
-            placeholder="your email here..."
+            placeholder="Your email here..."
             value={formData.email}
             onChange={handleChange}
           />

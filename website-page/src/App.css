@@ -1558,9 +1558,9 @@ height: 400px;
 width: 600px
 }
 .nameBox{
-  border-radius: 15px;
   width: 100%;
   height: 50px;
+  padding-top: 10px;
   margin-bottom: 10px;
   margin-right: 20px;
 }
@@ -1568,7 +1568,7 @@ width: 600px
   border-radius: 15px;
   width: 100%;
   margin-top: 120px;
-  border: black solid 1px;
+  /* border: black solid 1px; */
   height: 150px;
   margin-bottom: 10px;
   padding: 10px;
@@ -1576,29 +1576,26 @@ width: 600px
 }
 
 .nameText{
-width: 28%;
-text-align: end;
+width: 20%;
+text-align: start;
 margin-left: -5px;
   /* border: 1px solid ; */
 }
 .emailText{
-  width: 28%;
-  text-align: end;
+  width: 20%;
+  text-align: start;
   /* padding-right: 20px; */
   margin-left: -5px;
     /* border: 1px solid ; */
   }
 
-  @media (max-width: 400px) { .emailText{
- justify-content: center;
- text-align: center;
-  }
-  }
 .enterName{
   position:relative;
   background-color: #0063A1;
-  width: 72%;
-  left:16%;
+  width: 85%;
+  border-radius: 5px;
+  border-style: solid;
+  left:10%;
   top:-50px;
   height: 80%;
   color: white;

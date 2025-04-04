@@ -23,7 +23,7 @@ export default function AboutMe() {
             <section className="JobBlulrb1">
             <p   style={{
                     opacity: activeCard === "more" ? "1" : "0",
-                  }}>"The start of this jounrey has begun through self drive to learn indpedalty(something that still fuels me!) and the completion of Northcoders Software Development Bootcamp. I am continuing to use the skills, languages and practices learned to dewvelop my perosnal projects whilst i seek employment in the field."</p>
+                  }}>"The start of my journey as developer began when I purchased several Jon Duckett books and culminated with the completion of the Northcoders Software Development Bootcamp in January 2025. I am continuing to use the skills, languages and practices learned to develop my personal projects whilst I seek employment in the field. "</p>
        </section>
        <section className="nextSlide">
         <button className="nextSlideBtn"
