@@ -78,7 +78,7 @@ export default function Certs() {
                 <p id="text"> Agile</p>
             </div>
             <div className="methodtext">
-            <p id="text">MWC </p>
+            <p id="text">MVC </p>
             </div>
             <div className="methodtext">
             <p id="text">SCRUM
