@@ -1578,13 +1578,14 @@ width: 600px
 .nameText{
 width: 28%;
 text-align: end;
+margin-left: -5px;
   /* border: 1px solid ; */
 }
 .emailText{
-  width: 30%;
+  width: 28%;
   text-align: end;
   /* padding-right: 20px; */
-  margin-left: -10px;
+  margin-left: -5px;
     /* border: 1px solid ; */
   }
 
