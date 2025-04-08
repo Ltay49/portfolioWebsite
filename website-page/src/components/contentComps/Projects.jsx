@@ -15,7 +15,7 @@ import Netlify from "../../assets/netlify.png";
 import Railway from "../../assets/Railway.png";
 import ReactNative from "../../assets/ReactNative.png";
 import NcProject from "./NcProject";
-import EuroLingo from "./EuroLingo"
+import EuroLingo from "./EuroLingo";
 
 export default function Projects() {
   const [activeCard, setActiveCard] = useState("gamePlay");
@@ -47,7 +47,6 @@ export default function Projects() {
     }
   };
 
-
   return (
     <div className="projects" id="projects">
       {projectPageB ? (
@@ -72,6 +71,14 @@ export default function Projects() {
               same player to guess.
             </p>
           </section>
+              <a
+                className="visitBC"
+                href="https://barclaysmen.netlify.app"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Play here
+              </a>
           <section className="projectVideo">
             <button
               className="gptag"
@@ -116,10 +123,7 @@ export default function Projects() {
               src={GAMEPLAY}
               style={{ zIndex: activeCard === "gamePlay" ? 10 : 0 }}
             ></img>
-            <section
-              className="projectGamePlay"
-        
-                >
+            <section className="projectGamePlay">
               <li
                 className="gpblurb"
                 style={{ opacity: activeCard === "gamePlay" ? 1 : 0 }}
@@ -166,8 +170,8 @@ export default function Projects() {
                 className="howtoblurb"
                 style={{ opacity: activeCard === "howToPlay" ? 1 : 0 }}
               >
-                In-play game styling, providing continuity and
-                establishing a consistent theme
+                In-play game styling, providing continuity and establishing a
+                consistent theme
               </p>
             </section>
             <section
@@ -212,11 +216,17 @@ export default function Projects() {
             <img className="Expo" src={ReactNative}></img>
           </section>
         </section>
-      ) : projectPageNc ?(
-        <NcProject projectPageNc={projectPageNc} setProjectPageNc={setProjectPageNc}/>
-       ) : projectPageEl ?(
-        <EuroLingo projectPageEl={projectPageEl} setProjectPageEl={setProjectPageEl}/>
-       ) :(
+      ) : projectPageNc ? (
+        <NcProject
+          projectPageNc={projectPageNc}
+          setProjectPageNc={setProjectPageNc}
+        />
+      ) : projectPageEl ? (
+        <EuroLingo
+          projectPageEl={projectPageEl}
+          setProjectPageEl={setProjectPageEl}
+        />
+      ) : (
         <>
           <section className="project1">
             <h4 className="Projtitle" id="NCtext">

@@ -203,7 +203,6 @@ padding-bottom: 200px;
   overflow: hidden;
 }
 .projectText{
-  /* border: solid; */
   width: 32.5%;
   height: 96%;
   color: black;
@@ -215,7 +214,7 @@ padding-bottom: 200px;
   color: #0063A1;
   text-align: center;
   font-size: 2em;
-  margin-top:-80px;
+  margin-top:0px;
 }
 
 @media (max-width: 500px) {
@@ -1264,14 +1263,30 @@ width:113px
       border-radius: 10px; 
       z-index: 1
     }
-    /* .ncbutton{
-      border-radius: 10px;
-      width: 10%;
-      position: absolute;
-      top:25%;
-      right:35%
-    } */
-
+  .visitNC, .visitEL, .visitBC{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    color: darkred;
+    font-weight: bold;
+    position:absolute;
+    cursor: pointer;
+    top: 88%;
+    left:1%
+  }
+  .visitBC{
+    color:#0063A1;
+    cursor: pointer;
+    position:absolute;
+    top: 88%;
+    left:1%
+  }
+  .visitEL{
+    color:green;
+    cursor: pointer;
+    position:absolute;
+    top: 88%;
+    left:1%
+  }
     /* -----------------------EURO LINGO----------------------------- */
 
     .projpageEl{

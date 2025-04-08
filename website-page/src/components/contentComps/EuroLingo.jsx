@@ -38,9 +38,11 @@ export default function EuroLingo({setProjectPageEl, projectPageEl}){
         <section className="projectText">
           <p className="projpageEl">EuroLingo</p>
           <p className="blurb">
-            This project was a lot of fun and required me to learn a new tech stack. The backend is composed of no sql collections, using MongoDB, mongoose,atlas and Typescript. The front end is bound via React and Phaser.js. It is an interactive language learning game aimed for beginers but has the funtionality to increase in diffuclty for more accomplished learners. 
+          This project was a lot of fun and required me to learn a new tech stack. The backend is composed of NoSQL collections, using MongoDB, Mongoose, Atlas, and TypeScript. The frontend is built with React and Phaser.js. It is an interactive language learning game aimed at beginners, but it also has functionality to increase in difficulty for more accomplished learners.
           </p>
-            {/* <img className="ncbutton" src={NCBTN}></img> */}
+          <div>
+            <a className="visitEL">play here</a>
+            </div>
         </section>
         <section className="projectVideo"
         >
@@ -131,13 +133,13 @@ export default function EuroLingo({setProjectPageEl, projectPageEl}){
               style={{ opacity: activeCard === "layout(a)" ? 1 : 0,
              }}
             >
-           Checks log in details, both username and password via FETCHING user details.
+           Checks log in details, both username and password via <b>FETCHING</b> user details.
             </li>
             <li
               className="ELblurb"
               style={{ opacity: activeCard === "layout(a)" ? 1 : 0 }}
             >
-            Prompt to ceate an account which will result in POST request to add a user to the game.
+            Prompt to ceate an account which will result in a <b>POST</b> request to add a user to the game.
             </li>
             <li
               className="ELblurb"
@@ -171,7 +173,7 @@ export default function EuroLingo({setProjectPageEl, projectPageEl}){
               className="ELblurb1"
               style={{ opacity: activeCard === "features(a)" ? 1 : 0 }}
             >
-           Api call made on house entry, FETCHING words from the DB, then randomised to ensure a new learning experience for each level.
+           Api call made on house entry, <b>FETCHING</b> words from the DB, then randomised to ensure a new learning experience for each level.
             </p>
             <p
               className="ELblurb1"
@@ -183,7 +185,7 @@ export default function EuroLingo({setProjectPageEl, projectPageEl}){
               className="ELblurb1"
               style={{ opacity: activeCard === "features(a)" ? 1 : 0 }}
             >
-          POST requests to the users collection, tracking progression, reflected in the main map progress bar.
+          <b>POST</b> requests to the users collection, tracking progression, reflected in the main map progress bar.
             </p>
           </section>
           <section
@@ -212,7 +214,7 @@ export default function EuroLingo({setProjectPageEl, projectPageEl}){
               className="ELblurb1"
               style={{ opacity: activeCard === "features(c)" ? 1 : 0 }}
             >
-           API GET request for chosen langauge, randomisiation of the words for a unique learning experience
+           <b>GET</b> request for chosen langauge, randomisiation of the words for a unique learning experience
             </p>
             <p
               className="ELblurb1"

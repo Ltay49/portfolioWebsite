@@ -41,9 +41,16 @@ export default function NcProject({projectPageNc,setProjectPageNc }) {
         <section className="projectText">
           <p className="projpageNcN">Nc News</p>
           <p className="blurbNcN">
-         My first full stack finished project, completed at Northcoders. Includes a solid backend with rigouros testing for all eventualities. 20+ SQL queries, 10+ Restful API's including GET,PATCH,POST and DELETE requests as well as error handling. The front end built in React has dynaminc routes and 'useContext' for customised UX as well as showcasing other hooks. It is an indipendant blog site.
+         My first <b>full stack</b> finished project, completed at Northcoders. Includes a solid backend with rigouros testing for all eventualities. 20+  <b>SQL </b>queries, 10+ <b>Restful API's</b> including <b>GET,PATCH,POST</b> and <b>DELETE</b> requests as well as error handling. The front end built in React has dynaminc routes and <b>'useContext'</b> for customised <b>UX</b> as well as showcasing other hooks. It is an indipendant blog site.
           </p>
-            {/* <img className="ncbutton" src={NCBTN}></img> */}
+          <div>
+          <a
+                className="visitNC"
+                href="https://lrtnews.netlify.app"
+                target="_blank"
+                rel="noopener noreferrer"
+              >visit here</a>
+            </div>
         </section>
         <section className="projectVideo"
         >
@@ -126,7 +133,7 @@ export default function NcProject({projectPageNc,setProjectPageNc }) {
               className="glblurb"
               style={{ opacity: activeCard === "layout(a)" ? 1 : 0 }}
             >
-            Articles are FETCHED on render and key/pair values are procsiely positioned
+            Articles are <b>FETCHED</b> on render and key/pair values are procsiely positioned
             </li>
             <li
               className="glblurb"
@@ -149,7 +156,7 @@ export default function NcProject({projectPageNc,setProjectPageNc }) {
               className="glblurb"
               style={{ opacity: activeCard === "layout(b)" ? 1 : 0 }}
             >
-            Displayed through a GET request via the 'useParams' hook
+            Displayed through a <b>GET</b> request via the <b>'useParams'</b> hook
             </li>
             <li
                className="glblurb"
@@ -161,7 +168,7 @@ export default function NcProject({projectPageNc,setProjectPageNc }) {
             className="glblurb"
               style={{ opacity: activeCard === "layout(b)" ? 1 : 0 }}
             >
-            Additionally the article comments are FETCHED and comments can be POSTed
+            Additionally the article comments are <b>FETCHED</b> and comments can be <b>POST</b>ed
             </p>
           </section>
           <section
@@ -178,19 +185,19 @@ export default function NcProject({projectPageNc,setProjectPageNc }) {
               className="ftblurb"
               style={{ opacity: activeCard === "features(b)" ? 1 : 0 }}
             >
-            Via 'useContext' hook the users activity state is shared between components
+            Via <b>'useContext'</b> hook the users activity state is shared between components
             </p>
             <p
               className="ftblurb"
               style={{ opacity: activeCard === "features(b)" ? 1 : 0 }}
             >
-            Features eatures of having an account include; a members area where their pp is displayed, a personal greeting in their area as well as main page, the ability to DELETE and PATCH their comments
+            Features eatures of having an account include; a members area where their pp is displayed, a personal greeting in their area as well as main page, the ability to <b>DELETE</b> and <b>PATCH</b> their comments
             </p>
             <p
               className="ftblurb"
               style={{ opacity: activeCard === "features(b)" ? 1 : 0 }}
             >
-            Additional features include PATCH requests to the voting which uses optimistic rendering for instant UX/UI
+            Additional features include <b>PATCH</b> requests to the voting which uses optimistic rendering for instant <b>UX/UI</b>
             </p>
           </section>
           <section
