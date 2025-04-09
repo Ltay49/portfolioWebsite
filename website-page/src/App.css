@@ -1289,6 +1289,7 @@ width:113px
   }
   @media (max-width: 700px) {  .visitNC, .visitEL, .visitBC{
     top: 96%;
+  font-size:16px
   }
   }
 
