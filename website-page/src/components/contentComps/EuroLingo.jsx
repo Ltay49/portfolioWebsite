@@ -41,7 +41,14 @@ export default function EuroLingo({setProjectPageEl, projectPageEl}){
           This project was a lot of fun and required me to learn a new tech stack. The backend is composed of NoSQL collections, using MongoDB, Mongoose, Atlas, and TypeScript. The frontend is built with React and Phaser.js. It is an interactive language learning game aimed at beginners, but it also has functionality to increase in difficulty for more accomplished learners.
           </p>
           <div>
-            <a className="visitEL">play here</a>
+          <a
+                className="visitEL"
+                href="https://eurolingolt.netlify.app"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Play here
+              </a>
             </div>
         </section>
         <section className="projectVideo"
@@ -59,7 +66,6 @@ export default function EuroLingo({setProjectPageEl, projectPageEl}){
             className="eltagb"
             style={{
               border: activeCard === "layout(b)" ? "black solid 1px" : "none",
-              // opacity: activeCard === "howToPlay" ? "1" : "0.5"
             }}
             onClick={() => setActiveCard("layout(b)")}
           >
@@ -103,12 +109,6 @@ export default function EuroLingo({setProjectPageEl, projectPageEl}){
             style={{ zIndex: activeCard === "layout(a)" ? 10 : 0,
                 opacity: activeCard === "layout(a)" ? 1 : 0  }}
           ></video> 
-          {/* <img
-            className="generalLayoutPP"
-            src={GridLayout}
-            style={{ zIndex: activeCard === "layout(a)" ? 10 : 0,
-                    opacity: activeCard === "layout(a)" ? 1 : 0}}
-          ></img>  */}
              <video
               className="hoverVideo1"
               src={GP}
@@ -124,7 +124,6 @@ export default function EuroLingo({setProjectPageEl, projectPageEl}){
           <section
             className="projectGeneralLayout"
             style={{
-                // border: activeCard === "gamePlay" ? "black solid 1px" : "none",
                 opacity: activeCard === "layout(a)" ? 1 : 0
               }}
           >
@@ -199,7 +198,6 @@ export default function EuroLingo({setProjectPageEl, projectPageEl}){
             style={{ zIndex: activeCard === "features(c)" ? 9 : 0,
             opacity: activeCard === "features(c)" ? 1 : 0 }}
           >
-            {/* <button className="gotagTop" onClick={() => setActiveCard('gameOver')}>game over</button> */}
             <p
               className="ELblurb1"
               style={{ opacity: activeCard === "features(c)" ? 1 : 0 }}

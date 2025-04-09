@@ -128,7 +128,7 @@ export default function Projects() {
                 className="gpblurb"
                 style={{ opacity: activeCard === "gamePlay" ? 1 : 0 }}
               >
-                Rapid Api calls for instant fast flowing game play
+                Rapid <b>Api</b> calls for instant fast flowing game play
               </li>
               <li
                 className="gpblurb"
@@ -140,13 +140,13 @@ export default function Projects() {
                 className="gpblurb"
                 style={{ opacity: activeCard === "gamePlay" ? 1 : 0 }}
               >
-                Async storgae for custom experience which tracks user progress
+                <b>Async storgae</b> for custom experience which tracks user progress
               </li>
               <li
                 className="gpblurb"
                 style={{ opacity: activeCard === "gamePlay" ? 1 : 0 }}
               >
-                Fun and compact styling for UX
+                Fun and compact styling for <b>UX</b>
               </li>
             </section>
             <section
