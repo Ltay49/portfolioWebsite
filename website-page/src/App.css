@@ -1309,6 +1309,13 @@ width:113px
       position: absolute;
       width: 100%;
     }
+
+    @media (max-width: 700px) {   .elBack{
+      width: 200%;
+    left:-60%
+    }
+    }
+
     .stackTextEl{
       font-family: 'Press Start 2P', cursive;
       font-weight: bold;
